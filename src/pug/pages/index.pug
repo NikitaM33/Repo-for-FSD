@@ -1,0 +1,22 @@
+extends ../layout/main
+
+block variables
+    - var pageTitle = 'Test Pug with Webpack'
+    - var youAreUsingPug = true
+
+block content
+    section
+        h1.greeting Hello world!
+        h3 Hello Pug!
+        #container.col
+        if youAreUsingPug
+            p You are amazing
+        else
+            p Get on it!
+            p.
+                Pug is a terse and simple templating language with a
+                strong focus on performance and powerful features.
+
+        .wrapper
+            for i in [1, 2, 3, 4]
+                li=i

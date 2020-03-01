@@ -1,0 +1,13 @@
+block variables
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        link(rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>")
+        title= pageTitle
+    body
+        include ../modules/header
+        block header
+        block content
+        block footer

@@ -1,0 +1,17 @@
+@import 'header.scss';
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    // CSS фичи #10 ➤ Параллакс эффект на CSS | Parallax Effect CSS without JS
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}

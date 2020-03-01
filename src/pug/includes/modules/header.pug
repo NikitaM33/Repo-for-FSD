@@ -1,0 +1,17 @@
+include ../../utils/mixins
+
+//- block styles
+//-     link(rel="stylesheet", href="../../../scss/header.css")
+
+header.header
+    .header-logo
+        include ../components/logo/logo
+    
+    .header-nav
+        ul
+            +headerNav("#", "О нас")
+            +headerNav("#", "Услуги")
+            +headerNav("#", "Вакансии")
+            +headerNav("#", "Новости")
+            +headerNav("#", "Соглашения")
+        

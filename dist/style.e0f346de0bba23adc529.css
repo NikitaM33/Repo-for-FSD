@@ -1,0 +1,19 @@
+.header-nav {
+  display: flex; }
+  .header-nav ul {
+    list-style: none; }
+  .header-nav li a {
+    text-decoration: none;
+    color: rgba(31, 32, 65, 0.5); }
+
+html {
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  max-width: 1440px; }
+

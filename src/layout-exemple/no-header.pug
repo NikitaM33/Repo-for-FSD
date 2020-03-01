@@ -1,0 +1,9 @@
+block variables
+
+doctype html
+html(lang="en")
+    head
+        link(rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>")
+        title= pageTitle
+    body
+        block content
