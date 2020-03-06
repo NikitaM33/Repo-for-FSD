@@ -1,0 +1,29 @@
+.signup-btn {
+
+    input {
+        display: flex;
+        width: 16.7em;
+        height: 34px;
+        margin-left: 1.5em;
+        padding: 3px 1.8em;
+        align-items: center;
+        box-sizing: border-box;
+        font-family: Montserrat;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #fff;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border: none;
+        border-radius: 22px;
+        outline: 0;
+        cursor: pointer;
+
+        // &::-moz-focus-inner {
+        //     border: none;
+        // }
+        // &::-moz-focus-outer {
+        //     border: none;
+        // }
+    }
+}

@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+// const FileLoader = require('file-loader');
 
 module.exports = {
     entry: {main: './src/index.js'},
@@ -26,6 +27,13 @@ module.exports = {
             {
                 test: /\.pug$/,
                 use: ['pug-loader', 'html-loader?attrs=false', 'pug-html=loader']
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file-loader',
+                options: {
+                    name: './src/assets/fonts/[name].[ext]'
+                }
             }
         ]
     },
