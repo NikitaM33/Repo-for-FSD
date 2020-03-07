@@ -1,4 +1,5 @@
-include ../../utils/mixins
+include ../../utils/Nav/mixins
+include ../../utils/Buttons/Buttons
 
 header.header
     .header-logo
@@ -13,6 +14,5 @@ header.header
             +headerNav("#", "Соглашения")
     
     .header-buttons
-        include ../components/Buttons/SignInBtn
-        include ../components/Buttons/SignUpBtn
-        
+        +SignInButton("Войти")
+        +SignUpButton("Зарегестрироваться")
