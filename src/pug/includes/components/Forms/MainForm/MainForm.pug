@@ -1,0 +1,25 @@
+include ../../../../utils/Buttons/Buttons
+
+block variables
+    - var arrow = '../src/image/arrowforward.png';
+
+.main-form
+    .main-form__header
+        h2 Найдем номера под <br />ваши пожелания
+    .search-form
+        .search-form__arrival-departure
+            .arrival-input
+                label Прибытие
+                br
+                input(type="date")
+            .departure-input
+                label Выезд
+                br
+                input(type="date")
+        .search-form__guests-input
+            label Гости
+            br
+            input(type="text" placeholder="Сколько гостей")
+    .search-form__button
+        .search-form__button_size
+            +BigVelvetFillBtn('Подобрать номер', '#1', arrow)

@@ -7,15 +7,12 @@ html(lang="en")
         meta(name="keyword" content="find, hotel")
         meta(name="description" content="find the hotel")
         link(rel="stylesheet" href!="<%=htmlWebpackPlugin.files.chunks.main.css %>")
-        link(href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet")
         title=pageTitle
 
     body.wrapper
         include ../includes/modules/header
-        main
-            .container
-                block content
-            
+        
+        block content
 
         include ../includes/modules/footer
         script(src!="<%= htmlWebpackPlugin.files.chunks.main.entry %>")

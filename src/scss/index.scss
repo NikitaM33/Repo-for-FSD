@@ -1,3 +1,21 @@
-.find-wrapper {
-    // background: url(../image/image.png); нужен loader
+.container {
+    display: grid;
+    grid-template-columns: 46% 26% 19% 9%;
+    grid-template-rows: 90% 10%;
+    position: relative;
+    width: 100%;
+    height: 52em;
+    background: url("../image/image3.png") no-repeat;
+
+    span {
+        grid-column-start: 3;
+        grid-row-start: 2;
+
+        p {
+            font-size: 14px;
+            line-height: 24px;
+            text-align: right;
+            color: rgba(31, 32, 65, 0.75);
+        }
+    }
 }

@@ -31,9 +31,6 @@
 
         a{
             text-decoration: none;
-            font-style: normal;
-            font-weight: normal;
-            font-family: Montserrat;
             font-size: 14px;
             line-height: 17px;
             color: rgba(31, 32, 65, 0.5);
@@ -44,4 +41,12 @@
 .header-buttons {
     display: flex;
     padding: 1.1em 3px;
+
+    span {
+        margin-right: 1.3em;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }

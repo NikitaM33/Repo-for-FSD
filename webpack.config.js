@@ -34,6 +34,13 @@ module.exports = {
                 options: {
                     name: './src/assets/fonts/[name].[ext]'
                 }
+            },
+            {
+                test: /\.(jpg|JPG|jpeg|png|gif|svg)$/,
+                loader: 'file-loader',
+                options: {
+                    name: './src/image/[name].[ext]'
+                }
             }
         ]
     },

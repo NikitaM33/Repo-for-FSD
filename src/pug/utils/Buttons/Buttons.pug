@@ -1,7 +1,12 @@
-mixin SignInButton(name)
+mixin SignInButton(name, link)
     .signin-btn
         input(type="button" value=name)
 
-mixin SignUpButton(name)
+mixin SignUpButton(name, link, btnImage)
     .signup-btn
         input(type="button" value=name)
+
+mixin BigVelvetFillBtn(name, link, arrow)
+    .fill-btn
+        button=name
+            img(src=arrow, alt="arrow")
