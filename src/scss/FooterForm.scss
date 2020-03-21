@@ -1,0 +1,33 @@
+.footerForm {
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+
+    input {
+        width: 72%;
+        padding: 0.5em 1.3em;
+        font-size: 14px;
+        line-height: 24px;
+        border: none;
+        outline: none;
+    }
+
+    button {
+        width: calc(100% - 223px);
+        height: calc(8em - 66px);
+        background: inherit;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 1.5em;
+        }
+
+        &:hover img {
+            height: 1.8em;
+        }
+    }
+}

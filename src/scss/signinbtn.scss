@@ -1,6 +1,7 @@
 .signin-btn {
     position: relative;
     border-radius: 22px;
+    transition: 0.3s ease-in-out;
 
     input {
         display: flex;
@@ -20,6 +21,11 @@
         border-radius: 22px;
         outline: 0;
         cursor: pointer;
+        opacity: 1;
+    }
+
+    &:hover {
+        opacity: 0.5;
     }
 
     &:before {

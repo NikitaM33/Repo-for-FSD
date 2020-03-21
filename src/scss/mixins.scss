@@ -1,0 +1,15 @@
+.footer-li-style   {
+    margin: 1.2em 0rem 0rem 0;
+}
+
+.footer-link-style {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.5);
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+        color: rgba(31, 32, 65, 0.8);
+    }
+}

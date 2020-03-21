@@ -1,0 +1,50 @@
+.signin-btn {
+  position: relative;
+  border-radius: 22px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.signin-btn input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 87px;
+  height: 34px;
+  padding: 3px 1.5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  background: #fff;
+  background-clip: padding-box;
+  border: solid 2px transparent;
+  border-radius: 22px;
+  outline: 0;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.signin-btn:hover {
+  opacity: 0.5;
+}
+
+.signin-btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  z-index: -1;
+}
+/*# sourceMappingURL=signinbtn.css.map */

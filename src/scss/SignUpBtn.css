@@ -1,0 +1,42 @@
+.signup-btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.signup-btn input,
+.signup-btn a {
+  display: block;
+  padding: 0.8em 1.8em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: none;
+  border-radius: 22px;
+  outline: 0;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  opacity: 0.5;
+}
+
+.signup-btn img {
+  max-width: 100%;
+  float: right;
+}
+/*# sourceMappingURL=SignUpBtn.css.map */

@@ -1,0 +1,27 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 46% 26% 19% 9%;
+      grid-template-columns: 46% 26% 19% 9%;
+  -ms-grid-rows: 90% 10%;
+      grid-template-rows: 90% 10%;
+  position: relative;
+  width: 100%;
+  height: 52em;
+  background: url("../image/image3.png") no-repeat;
+}
+
+.container span {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.container span p {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.75);
+}
+/*# sourceMappingURL=index.css.map */

@@ -10,7 +10,12 @@
     display: flex;
     margin: 13px 140px;
 
+    &__item1 {
+        height: fit-content;
+    }
+
     &__item2 {
+        height: fit-content;
         margin-left: 12.9px;
         margin-top: 15px;
     }
@@ -29,11 +34,16 @@
     li {
         margin-left: 1.7em;
 
-        a{
+        a {
             text-decoration: none;
             font-size: 14px;
             line-height: 17px;
             color: rgba(31, 32, 65, 0.5);
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                color: rgba(31, 32, 65, 0.8); 
+            }
         }
     }
 }

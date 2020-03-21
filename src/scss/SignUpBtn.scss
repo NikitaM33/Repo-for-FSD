@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: 0.3s ease-in-out;
 
     input,
     a {
@@ -24,6 +25,10 @@
         border-radius: 22px;
         outline: 0;
         cursor: pointer;
+    }
+
+    &:hover {
+        opacity: 0.5;
     }
 
     img {

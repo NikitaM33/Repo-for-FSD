@@ -45,18 +45,26 @@
 @import 'velvetFillBtn.scss';
 @import 'index.scss';
 @import 'mainForm.scss';
+@import 'footer.scss';
+@import 'mixins.scss';
+@import 'FooterForm.scss';
+@import 'postFooter.scss';
 
 html {
     height: 100%;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 body {
+    // CSS фичи #10 ➤ Параллакс эффект на CSS | Parallax Effect CSS without JS
     margin: 0;
     padding: 0;
-    // CSS фичи #10 ➤ Параллакс эффект на CSS | Parallax Effect CSS without JS
     font-family: 'Montserrat', sans-serif;
     color: #1F2041;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .wrapper {

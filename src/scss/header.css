@@ -1,0 +1,74 @@
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 34% 31%;
+      grid-template-columns: 35% 34% 31%;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  width: 100%;
+  min-height: 70px;
+}
+
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 13px 140px;
+}
+
+.header-logo__item1 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.header-logo__item2 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 12.9px;
+  margin-top: 15px;
+}
+
+.header-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 26px 0px;
+  list-style: none;
+}
+
+.header-nav li {
+  margin-left: 1.7em;
+}
+
+.header-nav li a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.header-nav li a:hover {
+  color: rgba(31, 32, 65, 0.8);
+}
+
+.header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.1em 3px;
+}
+
+.header-buttons span {
+  margin-right: 1.3em;
+}
+
+.header-buttons span:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=header.css.map */
