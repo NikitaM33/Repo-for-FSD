@@ -1,0 +1,18 @@
+block variables
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="keyword" content="find, hotel")
+        meta(name="description" content="find the hotel")
+        link(rel="stylesheet" href!="<%=htmlWebpackPlugin.files.chunks.main.css %>")
+        link(rel="stylesheet" href!="<%=htmlWebpackPlugin.files.chunks.searchedRoom.css %>")
+        title=pageTitle
+
+body.wrapper
+    include ../includes/modules/header
+    block searchingcontent
+    include ../includes/modules/footer
+    script(src!="<%= htmlWebpackPlugin.files.chunks.searchedRoom.entry %>")
+    //- script(src="jQuery/jquery-3.4.1.min.js") удалить папку jQuery

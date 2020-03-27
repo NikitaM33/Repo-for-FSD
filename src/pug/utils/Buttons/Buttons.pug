@@ -8,5 +8,6 @@ mixin SignUpButton(name, link, btnImage)
 
 mixin BigVelvetFillBtn(name, link, arrow)
     .fill-btn
-        button=name
+        //- button=name
+        a(href=link)=name
             img(src=arrow, alt="arrow")

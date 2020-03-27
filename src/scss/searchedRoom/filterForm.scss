@@ -1,0 +1,40 @@
+.filterFormContainer {
+    margin-top: 1.7em;
+    padding: 0;
+
+    label {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+
+    .filterInput__dateInput,
+    .filterInput__select {
+        margin-top: 3px;
+        margin-bottom: 1.1em;
+        box-sizing: border-box;
+        background: #fff;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+
+        input {
+            width: 91%;
+            padding: 8px;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px;
+        }
+
+        input,
+        select {
+            display: block;
+            font-size: 14px;
+            line-height: 24px;
+            border: none;
+            outline: none;
+        }
+    }
+}

@@ -487,7 +487,7 @@
       grid-template-columns: 33% 1fr 1fr 1fr 15%;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  padding: 1.5em 8em 2em 8.7em;
+  padding: 1.7em 8em 1em 8.7em;
 }
 
 .postFooter p {
@@ -500,6 +500,25 @@
 .postFooter .social-icons {
   -ms-grid-column: 5;
       grid-column-start: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.postFooter .social-icons a {
+  margin-right: 1.1em;
+}
+
+.postFooter .social-icons a img {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.postFooter .social-icons a:hover img {
+  opacity: 0.5;
 }
 
 html {

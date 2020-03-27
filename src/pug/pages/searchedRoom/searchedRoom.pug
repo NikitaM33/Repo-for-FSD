@@ -1,0 +1,21 @@
+extends ../../layout/searching-room
+
+block variables
+    -var pageTitle = 'Searchin room'
+
+block searchingcontent
+    main
+        section
+            .container
+                .searchedRoom-wrapper
+                    .filter
+                        .room-filter
+                            .room-filter__searchingFilter
+                                include ../../includes/components/Forms/FilterForm/FilterForm
+                        .coast-filter
+                            .coast-filter__slider
+                                include ../../includes/components/Forms/FormItems/slider.pug
+
+                            
+                    .filter-result
+                        p result

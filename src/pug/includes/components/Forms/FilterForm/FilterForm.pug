@@ -1,0 +1,15 @@
+include ../FormItems/formInput
+
+
+.filterFormContainer
+    .filterInput
+        label Даты пребывания в отеле
+        .filterInput__dateInput
+            +formInput("date")
+    .filterInput
+        label Гости
+        .filterInput__select
+            select
+                option Взрослые
+                option Дети
+                option Младенцы

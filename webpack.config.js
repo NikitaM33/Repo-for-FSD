@@ -1,12 +1,20 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+// const CleanWebpackPlugin = require('clean-webpack-plugin');
 // const FileLoader = require('file-loader');
 
 module.exports = {
-    entry: {main: './src/index.js'},
+    entry: {
+        main: './src/index.js',
+        searchedRoom: './src/pug/pages/searchedRoom/searchedRoom.js'
+    },
+    // entry: [
+    //     './src/index.js',
+    //     './src/pug/pages/searchedRoom/searchedRoom.js'
+    // ],
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
@@ -45,7 +53,7 @@ module.exports = {
         ]
     },
     plugins: [
-        // new CleanWebpackPlugin('dist', {}),
+        // new CleanWebpackPlugin(['dist']), // с этим падает ошибка "CleanWebpackPlugin не является конструктором" 
         new MiniCssExtractPlugin({
             filename: 'style.[contenthash].css'
         }),
@@ -54,6 +62,17 @@ module.exports = {
             hash: true,
             template: './src/pug/pages/index.html',
             filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/pug/pages/searchedRoom/searchedRoom.html',
+            filename: 'searchedRoom.html'
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
         }),
         new WebpackMd5Hash()
     ]

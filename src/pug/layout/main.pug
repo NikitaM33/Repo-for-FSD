@@ -11,8 +11,6 @@ html(lang="en")
 
     body.wrapper
         include ../includes/modules/header
-        
         block content
-
         include ../includes/modules/footer
         script(src!="<%= htmlWebpackPlugin.files.chunks.main.entry %>")

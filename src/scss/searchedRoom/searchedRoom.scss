@@ -1,0 +1,65 @@
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../assets/fonts/montserrat-v14-cyrillic_latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../../assets/fonts/montserrat-v14-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../assets/fonts/montserrat-v14-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../assets/fonts/montserrat-v14-cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../../assets/fonts/montserrat-v14-cyrillic_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../assets/fonts/montserrat-v14-cyrillic_latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+src: url('../../assets/fonts/montserrat-v14-cyrillic_latin-700.eot'); /* IE9 Compat Modes */
+src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-700.woff') format('woff'), /* Modern Browsers */
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+
+@import 'filterForm.scss';
+@import 'slider.scss';
+
+html {
+    height: 100%;
+    // overflow: hidden;
+}
+
+body {
+    // CSS фичи #10 ➤ Параллакс эффект на CSS | Parallax Effect CSS without JS
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #1F2041;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.searchedRoom-wrapper {
+    display: grid;
+    grid-template-columns: 23% 72%;
+    grid-template-rows: auto;
+    gap: 3.7em;
+    padding: 0 8.8em;
+}
+
+.coast-filter__slider {
+    margin-top: 1.7em;
+}

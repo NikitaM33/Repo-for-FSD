@@ -1,11 +1,15 @@
 .container {
-    display: grid;
-    grid-template-columns: 46% 26% 19% 9%;
-    grid-template-rows: 90% 10%;
-    position: relative;
-    width: 100%;
-    height: 52em;
-    background: url("../image/image3.png") no-repeat;
+    
+
+    .imageBackGround {
+        display: grid;
+        grid-template-columns: 46% 26% 19% 9%;
+        grid-template-rows: 90% 10%;
+        position: relative;
+        width: 100%;
+        height: 52em;
+        background: url("../image/image3.png") no-repeat;
+    }
 
     span {
         grid-column-start: 3;
