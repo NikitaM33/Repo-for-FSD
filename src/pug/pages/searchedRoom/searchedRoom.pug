@@ -1,4 +1,7 @@
 extends ../../layout/searching-room
+include ../../utils/Checkbox/checkbox
+include ../../includes/components/Drop-menu/Drop-menu
+include ../../includes/components/Room-card/Room-card
 
 block variables
     -var pageTitle = 'Searchin room'
@@ -8,14 +11,50 @@ block searchingcontent
         section
             .container
                 .searchedRoom-wrapper
-                    .filter
+                    //- ================== Filter bar
+                    aside.filter
                         .room-filter
                             .room-filter__searchingFilter
                                 include ../../includes/components/Forms/FilterForm/FilterForm
                         .coast-filter
                             .coast-filter__slider
                                 include ../../includes/components/Forms/FormItems/slider.pug
+                        .checkbox-group
+                            .checkbox-group__checkbox
+                                .checkbox-group__label Дополнительные опции
+                                +checkbox('Можно курить')
+                                +checkbox('Можно с питомцами')
+                                +checkbox('Можно пригласить гостей (до 10 человек)')
+                        .availability 
+                            .availability-group__checkbox
+                                .availability__label Доступность
+                                +checkbox( 'Ширина коридора в номере не менее 91 см','Широкий коридор')
+                                +checkbox('На 1 этаже вас встретит специалист и проводит до номера', 'Помощник для инвалидов')
+                        .facilities Удобства номера
+                            .facilities__drop-menu
+                                +dropMenu('text', '1 спальня, 1 кровать...', 'Спальни', 'Кровати', 'Ванные комнаты')
+                        .additional-facilities
+                            .facilities__dropCheckbox
+                                include ../../includes/components/Drop-checkbox/Drop-checkbox
 
+                    //- ======================= Result of search
+                    main.filter-result
+                        label Номера, которые мы для вас подобрали
+                        .filter-result__card
+                            +roomCard('../src/image/888.png', '../src/image/888.png', '../src/image/888.png', '../src/image/888.png', '888', true, '9990', '145')
+                            +roomCard('../src/image/840.png', '../src/image/840.png', '../src/image/840.png', '../src/image/840.png', '840', false, '9990', '65')
+                            +roomCard('../src/image/980.png', '../src/image/980.png', '../src/image/980.png', '../src/image/980.png', '980', true, '8500', '35')
+                            +roomCard('../src/image/856.png', '../src/image/856.png', '../src/image/856.png', '../src/image/856.png', '856', false, '7300', '19')
                             
-                    .filter-result
-                        p result
+                            +roomCard('../src/image/740.png', '../src/image/740.png', '../src/image/740.png', '../src/image/740.png', '740', false, '6000', '44')
+                            +roomCard('../src/image/982.png', '../src/image/982.png', '../src/image/982.png', '../src/image/982.png', '982', false, '5800', '56')
+                            +roomCard('../src/image/678.png', '../src/image/678.png', '../src/image/678.png', '../src/image/678.png', '678', false, '5500', '45')
+                            +roomCard('../src/image/450.png', '../src/image/450.png', '../src/image/450.png', '../src/image/450.png', '450', false, '5300', '39')
+                            
+                            +roomCard('../src/image/350.png', '../src/image/350.png', '../src/image/350.png', '../src/image/350.png', '350', false, '5000', '77')
+                            +roomCard('../src/image/666.png', '../src/image/666.png', '../src/image/666.png', '../src/image/666.png', '666', false, '5000', '25')
+                            +roomCard('../src/image/444.png', '../src/image/444.png', '../src/image/444.png', '../src/image/444.png', '444', false, '5000', '15')
+                            +roomCard('../src/image/352.png', '../src/image/352.png', '../src/image/352.png', '../src/image/352.png', '352', false, '5000', '55')
+                        .filter-result__pagination-container
+                            include ../../includes/components/Pagination/Pagination
+

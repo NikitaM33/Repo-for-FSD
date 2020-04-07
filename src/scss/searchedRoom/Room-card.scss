@@ -1,0 +1,203 @@
+.card-wrapper {
+    display: inline-block;
+    width: 11.7em;
+    margin-bottom: 13px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    overflow: hidden;
+
+    .image-box {
+
+        .carousel  {
+            max-width: 1080px; /* ширина всего блока */
+            width:100%;
+            position: relative;
+        }
+
+        .carousel-wrapper {
+            // margin: 10px 30px; /* отступы для стрелок */
+            overflow: hidden; /* скрываем содержимое, выходящее за рамки основной области */
+            position:relative;
+
+            &__dots-wrapper {
+                display: flex;
+                position: absolute;
+                right: 14px;
+                bottom: 15px;
+                width: 41.25px;
+                height: 10px;
+                box-sizing: border-box;
+            }
+
+            &__dot {
+                width: 6px;
+                height: 6px;
+                margin-right: 3px;
+                border: 1px solid #FFFFFF;
+                border-radius: 50%;
+                box-shadow: 0px 5px 5px rgba(31, 32, 65, 0.3);
+                z-index: 1;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .carousel-wrapper__dot_active {
+            background: #ffffff;
+        }
+
+        .carousel-items {
+            width: 10000px; /* устанавливаем большую ширину для набора элементов */
+            position: relative; /* позиционируем блок относительно основной области карусели */
+        }
+
+        .carousel-block {
+            float: left; /* выстраиваем все элементы карусели в ряд */
+            padding: 0px 10px 0px 0px; /* делаем оступы, чтобы элементы не сливались */
+        }
+
+        .carousel-block img{
+            display: block;
+        }
+
+        /*********** BUTTONS ***********/
+        .carousel-button-left,
+        .carousel-button-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2em; 
+            height: 100%; 
+            position: absolute;
+            cursor: pointer; 
+            text-decoration:none;
+            opacity: 0;
+            z-index: 1;
+            transition: .3s;
+            user-select: none;
+
+            a {
+                height: 1em;
+                text-decoration:none;
+            }
+        }
+
+        .carousel-button-left {
+            left: 0;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .carousel-button-right {
+            right: 0;
+            background: linear-gradient(to left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+        }
+    }
+
+    &:hover .carousel-button-left,
+    &:hover .carousel-button-right {
+        opacity: 1;
+    }
+
+    &__number-wrapper {
+        a {
+            text-decoration: none;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        .number-coast {
+            display: flex;
+            justify-content: space-between;
+            padding: 23px 14px 13px 19px;
+            margin-top: 1px;
+
+            a {
+                display: block;
+            }
+
+            .number {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 17px;
+                color: #1F2041;
+
+                span {
+
+                    &:first-child {
+                        margin-right: 3px;
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                    
+                    &:last-child {
+                        margin-left: 4px;
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 15px;
+                        text-transform: uppercase;
+                        color: #BC9CFF;
+                    }
+                }
+            }
+        
+            .coast {
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+
+                span {
+                    color: rgba(31, 32, 65, 0.5);
+
+                    &:first-child {
+                        margin-right: 1px;
+                    }
+
+                    &:last-child {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        hr {
+            margin: 0 auto;
+            width: 86%;
+            height: 1px;
+            border: none;
+            background: rgba(31, 32, 65, 0.1);
+        }
+
+        .stars {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 19px 14px 22px;
+
+            span {
+                img {
+                    margin-left: 2px;
+                }
+            }
+
+            .reviews {
+                // margin-left: ;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 31px;
+                color: rgba(31, 32, 65, 0.5);
+
+                span {
+                    &:last-child {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

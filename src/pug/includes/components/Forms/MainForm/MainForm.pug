@@ -1,7 +1,11 @@
 include ../../../../utils/Buttons/Buttons
+include ../../Drop-menu/Drop-menu
 
 block variables
     - var arrow = '../src/image/arrowforward.png';
+    - var firstLabelName = 'Взрослые'
+    - var secondLabelName = 'Дети'
+    - var thirdLabelName = 'Младенцы'
 
 .main-form
     .main-form__header
@@ -18,8 +22,8 @@ block variables
                 input(type="date")
         .search-form__guests-input
             label Гости
-            br
-            input(type="text" placeholder="Сколько гостей")
+            +dropMenu('text', 'Сколько гостей', 'Взрослые', 'Дети', 'Младенцы')
+            //- input(type="text" placeholder="Сколько гостей")
     .search-form__button
         .search-form__button_size
             +BigVelvetFillBtn('Подобрать номер', './searchedRoom.html', arrow)

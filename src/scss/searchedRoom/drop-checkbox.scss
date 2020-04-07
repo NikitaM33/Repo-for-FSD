@@ -1,0 +1,25 @@
+.drop-checkbox {
+
+    .label {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+
+    .updown-arrow {
+        margin-left: 2.4em;
+        // background: orange;
+        transform-origin: center;
+        transform: rotate(0deg);
+        transition: 0.3s;
+    }
+
+    .checkbox-group {
+        display: none;
+
+        label {
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,5 +1,7 @@
 include ../FormItems/formInput
+include ../../Drop-menu/Drop-menu
 
+block variables
 
 .filterFormContainer
     .filterInput
@@ -8,8 +10,4 @@ include ../FormItems/formInput
             +formInput("date")
     .filterInput
         label Гости
-        .filterInput__select
-            select
-                option Взрослые
-                option Дети
-                option Младенцы
+        +dropMenu('text', '3 гостя, 1 младенец', 'Взрослые', 'Дети', 'Младенцы')

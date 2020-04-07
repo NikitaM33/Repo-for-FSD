@@ -1,0 +1,52 @@
+mixin roomCard(image1, image2, image3, image4, roomNumber, lux, roomCoast, reviews)
+    .card-wrapper                            
+        .image-box
+            .carousel                        
+                .carousel-button-left
+                    a(href="#")
+                        img(src="../src/image/expend-left.png")
+                .carousel-button-right
+                    a(href="#")
+                        img(src="../src/image/expend-right.png")
+                .carousel-wrapper
+                    .carousel-items
+                        .carousel-block
+                            img(src=image1 alt="room")
+                        .carousel-block
+                            img(src=image2 alt="room")
+                        .carousel-block
+                            img(src=image3 alt="room")
+                        .carousel-block
+                            img(src=image4 alt="room")
+                    .carousel-wrapper__dots
+                        .carousel-wrapper__dots-wrapper
+                            .carousel-wrapper__dot.carousel-wrapper__dot_active
+                            .carousel-wrapper__dot
+                            .carousel-wrapper__dot
+                            .carousel-wrapper__dot
+        .card-wrapper__number-wrapper
+            a(href="#3333")
+                figure
+                    .number-coast
+                        .number
+                            span №
+                            span=roomNumber
+                            if lux
+                                span Люкс
+                            else
+                                span
+                        .coast
+                            span=roomCoast 
+                            span &#8381; 
+                            span в сутки
+                    hr
+                    .stars
+                        span 
+                            img(src="../src/image/star_active.svg" alt="star")
+                            img(src="../src/image/star_active.svg" alt="star")
+                            img(src="../src/image/star_active.svg" alt="star")
+                            img(src="../src/image/star_active.svg" alt="star")
+                            img(src="../src/image/star_active.svg" alt="star")
+                        span.reviews
+                            span=reviews
+                            span  Отзывов

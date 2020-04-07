@@ -1,0 +1,33 @@
+include ../../../utils/Buttons/Next-btn
+include ../../../utils/Buttons/Prev-btn
+
+block variables
+    - var arrow = '../src/image/arrowforward.png';
+
+.pagination__wrapper
+    .pagination__container
+        .pagination
+            a(href="#").pagination__btn.pagination__btn_hide
+                +prevBtn()
+            ul.pagination__list
+                each i in [1,2,3]
+                    if(i === 1)
+                        li.pagination__item.pagination__item_active
+                            a(href="#").pagination__link=i
+                    else
+                        li.pagination__item
+                            a(href="#").pagination__link=i
+                span.pagination__else-pages
+                    a(href="#").pagination__link ...
+                .pagination__count
+                    span.pagination__text
+                        a(href="#").pagination__link 15
+            a(href="#").pagination__btn
+                +nextBtn()
+            br
+        .pagination__info
+            p
+                span 1 - 12 
+                | из 
+                span 100+ 
+                | вариантов аренды

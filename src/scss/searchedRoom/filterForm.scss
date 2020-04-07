@@ -9,8 +9,7 @@
         text-transform: uppercase;
     }
 
-    .filterInput__dateInput,
-    .filterInput__select {
+    .filterInput__dateInput {
         margin-top: 3px;
         margin-bottom: 1.1em;
         box-sizing: border-box;
@@ -23,13 +22,7 @@
             padding: 8px;
         }
 
-        select {
-            width: 100%;
-            padding: 12px;
-        }
-
-        input,
-        select {
+        input {
             display: block;
             font-size: 14px;
             line-height: 24px;

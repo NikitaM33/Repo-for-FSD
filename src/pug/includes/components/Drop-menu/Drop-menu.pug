@@ -1,0 +1,26 @@
+include ../Forms/FormItems/formInput
+
+mixin dropMenu(inputType, countFacilities, firstLabelName, secondLabelName, thirdLabelName)
+    .drop-menu
+        .displayed-field
+            +formInput(inputType, countFacilities)
+            .arrow-down
+                img(src="../src/image/expand_more.png")
+
+        .choice-field
+            .choice-field__button
+                label=firstLabelName
+                div.minus -
+                input(type="text" value="1" readonly).quantity
+                div.plus +
+            .choice-field__button
+                label=secondLabelName
+                div.minus -
+                input(type="text" value="1").quantity
+                div.plus +
+            .choice-field__button
+                label=thirdLabelName
+                div.minus -
+                input(type="text" value="1").quantity
+                div.plus +
+        

@@ -1,0 +1,97 @@
+.drop-menu {
+    
+    .displayed-field {
+        display: flex;
+        position: relative;
+        box-sizing: border-box;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 5px 5px 0px 0px;
+
+        input {
+            padding: 12px 2.8em 12px 15px;
+            border: none;
+            outline: none;
+            color: rgba(31, 32, 65, 0.75);
+        }
+
+        .arrow-down {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            text-align: center;
+        }
+    }
+
+    .choice-field {
+        position: absolute;
+        display: none;
+        width: 18.4%;
+        background: #fff;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-top: none;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        z-index: 1;
+    }
+
+    .choice-field__button {
+        display: grid;
+        grid-template-columns: 61% 12% 15% 12%;
+        grid-template-rows: auto;
+        align-items: center;
+        padding: 7px 7px 7px 15px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            color: rgba(31, 32, 65, 0.5);
+            box-sizing: border-box;
+            border: 1px solid rgba(31, 32, 65, 0.5);
+            border-radius: 22px;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover {
+                color: #BC9CFF;
+                border: 1px solid #BC9CFF;
+            }
+        }
+
+        .quantity {
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            width: 7px;
+            margin: 0 auto;
+            font-weight: bold;
+            border: none;
+            outline: none;
+        }
+
+        .disabled {
+            // color: rgba(31, 32, 65, 0.25);
+            // color: red;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+
+            &:hover {
+                color: rgba(31, 32, 65, 0.25);
+                border: 1px solid rgba(31, 32, 65, 0.25);
+            }
+        }
+
+        .plus,
+        .minus {
+            user-select: none;
+        }
+    }
+}

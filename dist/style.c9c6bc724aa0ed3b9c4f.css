@@ -1,0 +1,309 @@
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.eot);
+  /* IE9 Compat Modes */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.eot?#iefix) format("embedded-opentype"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.woff2) format("woff2"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.woff) format("woff"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.ttf) format("truetype"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.svg#Montserrat) format("svg");
+  /* Legacy iOS */ }
+
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.eot);
+  /* IE9 Compat Modes */
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.eot?#iefix) format("embedded-opentype"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.woff2) format("woff2"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.woff) format("woff"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.ttf) format("truetype"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.svg#Montserrat) format("svg");
+  /* Legacy iOS */ }
+
+.filterFormContainer {
+  margin-top: 1.7em;
+  padding: 0; }
+  .filterFormContainer label {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase; }
+  .filterFormContainer .filterInput__dateInput {
+    margin-top: 3px;
+    margin-bottom: 1.1em;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px; }
+    .filterFormContainer .filterInput__dateInput input {
+      width: 91%;
+      padding: 8px; }
+    .filterFormContainer .filterInput__dateInput input {
+      display: block;
+      font-size: 14px;
+      line-height: 24px;
+      border: none;
+      outline: none; }
+
+.price-range label {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase; }
+
+.price-range span {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5); }
+
+.price-range .min-price {
+  margin-left: 3.7em; }
+
+.price-range .slider {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  margin-top: 1.4em;
+  margin-bottom: 0.9em;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 3px; }
+
+.price-range .slider .bar {
+  position: absolute;
+  left: 50px;
+  width: 300px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  height: 100%; }
+
+.price-range .slider .bar .lp span {
+  position: relative;
+  left: -30px; }
+
+.price-range .slider .bar .rp span {
+  position: relative;
+  left: 10px; }
+
+.price-range .slider .bar .lp, .price-range .slider .bar .rp {
+  cursor: pointer;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  width: 12px;
+  height: 12px;
+  border: 2px solid #FFFFFF;
+  border-radius: 100%;
+  position: absolute;
+  line-height: 400%;
+  color: #555;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.price-range .slider .bar .lp {
+  left: 0px;
+  top: -6px; }
+
+.price-range .slider .bar .rp {
+  left: 96%;
+  top: -6px; }
+
+.price-range p {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5); }
+
+.checkbox label {
+  display: flex; }
+
+.checkbox .checkbox {
+  display: none; }
+
+.checkbox .fancy-checkbox {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 13px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer; }
+  .checkbox .fancy-checkbox:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 8px;
+    transform: translate(-50%, -50%);
+    background-image: url(./src/image/Vector.png);
+    opacity: 0;
+    transition: 0.3s; }
+
+.checkbox .fancy-checkbox:last-child {
+  height: 25px; }
+
+.checkbox .checkbox:checked + .fancy-checkbox {
+  border: 1px solid #BC9CFF; }
+
+.checkbox .checkbox:checked + .fancy-checkbox:before {
+  opacity: 1; }
+
+.checkbox .fancy-wrapper {
+  max-width: 15em; }
+  .checkbox .fancy-wrapper .bold-name,
+  .checkbox .fancy-wrapper .checkbox-label {
+    font-size: 14px;
+    line-height: 18px; }
+  .checkbox .fancy-wrapper .bold-name {
+    display: block; }
+  .checkbox .fancy-wrapper .checkbox-label {
+    color: rgba(31, 32, 65, 0.5); }
+
+.drop-menu .displayed-field {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 5px 5px 0px 0px; }
+  .drop-menu .displayed-field input {
+    padding: 12px 2.8em 12px 15px;
+    border: none;
+    outline: none;
+    color: rgba(31, 32, 65, 0.75); }
+  .drop-menu .displayed-field .arrow-down {
+    width: 100%;
+    padding: 10px;
+    text-align: center; }
+  .drop-menu .displayed-field img {
+    text-align: center; }
+
+.drop-menu .choice-field {
+  position: absolute;
+  display: none;
+  width: 18.4%;
+  background: #fff;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  z-index: 1; }
+
+.drop-menu .choice-field__button {
+  display: grid;
+  grid-template-columns: 61% 12% 15% 12%;
+  grid-template-rows: auto;
+  align-items: center;
+  padding: 7px 7px 7px 15px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase; }
+  .drop-menu .choice-field__button div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: rgba(31, 32, 65, 0.5);
+    box-sizing: border-box;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    border-radius: 22px;
+    cursor: pointer;
+    transition: 0.2s; }
+    .drop-menu .choice-field__button div:hover {
+      color: #BC9CFF;
+      border: 1px solid #BC9CFF; }
+  .drop-menu .choice-field__button .quantity {
+    width: 7px;
+    margin: 0 auto;
+    font-weight: bold;
+    border: none;
+    outline: none; }
+  .drop-menu .choice-field__button .disabled {
+    border: 1px solid rgba(31, 32, 65, 0.25); }
+    .drop-menu .choice-field__button .disabled:hover {
+      color: rgba(31, 32, 65, 0.25);
+      border: 1px solid rgba(31, 32, 65, 0.25); }
+  .drop-menu .choice-field__button .plus,
+  .drop-menu .choice-field__button .minus {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+
+.drop-checkbox {
+  outline: 1px solid red; }
+  .drop-checkbox .updown-arrow {
+    margin-left: 2.4em; }
+  .drop-checkbox .checkbox-group .checkbox-label {
+    font-size: 14px;
+    line-height: 18px;
+    color: red !important; }
+
+html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #1F2041;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.searchedRoom-wrapper {
+  display: grid;
+  grid-template-columns: 23% 72%;
+  grid-template-rows: auto;
+  gap: 3.7em;
+  padding: 0 8.8em; }
+
+.coast-filter__slider {
+  margin-top: 1.7em; }
+
+.checkbox-group {
+  margin-top: 1.7em; }
+  .checkbox-group .checkbox-group__checkbox label {
+    margin-bottom: 10px; }
+  .checkbox-group .checkbox-group__label {
+    margin-bottom: 1.7em;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase; }
+
+.availability {
+  margin-top: 1.7em; }
+  .availability .availability-group__checkbox label {
+    margin-bottom: 5px; }
+  .availability .availability__label {
+    margin-bottom: 1.7em;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase; }
+  .availability .bold-name {
+    font-weight: bold; }
+  .availability .checkbox-label {
+    font-size: 12px !important;
+    line-height: 14px !important; }
+
+.facilities {
+  margin-top: 2em;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase; }
+  .facilities .facilities__drop-menu {
+    margin-top: 0.5em; }
+  .facilities .facilities__additional {
+    margin-top: 3.2em; }
+

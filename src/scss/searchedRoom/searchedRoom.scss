@@ -28,6 +28,13 @@ src: local('Montserrat Bold'), local('Montserrat-Bold'),
 
 @import 'filterForm.scss';
 @import 'slider.scss';
+@import 'checkbox.scss';
+@import 'Drop-menu.scss';
+@import 'drop-checkbox.scss';
+@import 'Room-card.scss';
+@import 'Pagination.scss';
+@import 'Next-btn.scss';
+@import 'Prev-btn.scss';
 
 html {
     height: 100%;
@@ -62,4 +69,84 @@ body {
 
 .coast-filter__slider {
     margin-top: 1.7em;
+}
+
+.checkbox-group {
+    margin-top: 1.7em;
+
+    .checkbox-group__checkbox {
+        label {
+            margin-bottom: 10px;
+        }
+    }
+
+    .checkbox-group__label {
+        margin-bottom: 1.7em;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+}
+
+.availability {
+    margin-top: 1.7em;
+
+    .availability-group__checkbox {
+        label {
+            margin-bottom: 5px;
+        }
+    }
+
+    .availability__label {
+        margin-bottom: 1.7em;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+
+    .bold-name {
+        font-weight: bold;
+    }
+    
+    .checkbox-label {
+        font-size: 12px !important;
+        line-height: 14px !important;
+    }
+}
+
+.facilities {
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+
+    .facilities__drop-menu {
+        margin-top: 0.5em;
+    }
+}
+
+.additional-facilities {
+    margin-top: 2.2em;
+}
+
+.filter-result {
+    padding-top: 1.3em;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 30px;
+    
+    &__card {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: auto;
+        gap: 5px;
+        margin-top: 0.9em;
+    }
+
+    &__pagination-container {
+        margin-top: 1.4em;
+    }
 }

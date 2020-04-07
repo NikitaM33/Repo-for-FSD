@@ -8,6 +8,7 @@ html(lang="en")
         meta(name="description" content="find the hotel")
         link(rel="stylesheet" href!="<%=htmlWebpackPlugin.files.chunks.main.css %>")
         link(rel="stylesheet" href!="<%=htmlWebpackPlugin.files.chunks.searchedRoom.css %>")
+        //- link(rel="stylesheet" type="text/css" href="slick/slick.css")
         title=pageTitle
 
 body.wrapper
@@ -15,4 +16,4 @@ body.wrapper
     block searchingcontent
     include ../includes/modules/footer
     script(src!="<%= htmlWebpackPlugin.files.chunks.searchedRoom.entry %>")
-    //- script(src="jQuery/jquery-3.4.1.min.js") удалить папку jQuery
+    //- script(type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js")

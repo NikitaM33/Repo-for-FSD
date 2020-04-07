@@ -11,14 +11,16 @@ module.exports = {
         main: './src/index.js',
         searchedRoom: './src/pug/pages/searchedRoom/searchedRoom.js'
     },
-    // entry: [
-    //     './src/index.js',
-    //     './src/pug/pages/searchedRoom/searchedRoom.js'
-    // ],
+
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
     },
+
+    // resolve: {
+    //     modulesDirectories: ['node_modules']
+    // },
+
     module: {
         rules: [
             {
@@ -28,14 +30,17 @@ module.exports = {
                     loader: "babel-loader"
                 }
             },
+
             {
                 test: /\.scss$/,
                 use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
             },
+
             {
                 test: /\.pug$/,
                 use: ['pug-loader', 'html-loader?attrs=false', 'pug-html=loader']
             },
+
             {
                 test: /\.(eot|svg|ttf|woff|woff2)$/,
                 loader: 'file-loader',
@@ -43,6 +48,7 @@ module.exports = {
                     name: './src/assets/fonts/[name].[ext]'
                 }
             },
+
             {
                 test: /\.(jpg|JPG|jpeg|png|gif|svg)$/,
                 loader: 'file-loader',
@@ -52,28 +58,33 @@ module.exports = {
             }
         ]
     },
+
     plugins: [
         // new CleanWebpackPlugin(['dist']), // с этим падает ошибка "CleanWebpackPlugin не является конструктором" 
         new MiniCssExtractPlugin({
             filename: 'style.[contenthash].css'
         }),
+        
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
             template: './src/pug/pages/index.html',
             filename: 'index.html'
         }),
+
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
             template: './src/pug/pages/searchedRoom/searchedRoom.html',
             filename: 'searchedRoom.html'
         }),
+
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
             'window.jQuery': 'jquery'
         }),
+
         new WebpackMd5Hash()
     ]
 };
