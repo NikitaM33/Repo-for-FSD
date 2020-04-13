@@ -1,0 +1,136 @@
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.eot);
+  /* IE9 Compat Modes */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.eot?#iefix) format("embedded-opentype"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.woff2) format("woff2"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.woff) format("woff"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.ttf) format("truetype"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.svg#Montserrat) format("svg");
+  /* Legacy iOS */ }
+
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.eot);
+  /* IE9 Compat Modes */
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.eot?#iefix) format("embedded-opentype"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.woff2) format("woff2"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.woff) format("woff"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.ttf) format("truetype"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.svg#Montserrat) format("svg");
+  /* Legacy iOS */ }
+
+.room-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  border-color: rgba(31, 32, 65, 0.1);
+  padding-bottom: 0.8em; }
+  .room-item__icon {
+    margin-right: 1em;
+    padding-top: 7px; }
+  .room-item__text {
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(31, 32, 65, 0.75); }
+    .room-item__text label {
+      font-weight: bold; }
+    .room-item__text p {
+      margin: 0;
+      padding: 0;
+      font-weight: 400; }
+
+html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #1F2041;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.room-view {
+  max-height: 30.3em; }
+
+.room-gallery {
+  display: grid;
+  grid-template-columns: 68% 32%;
+  grid-template-rows: auto; }
+  .room-gallery__small-image {
+    padding-top: 1px; }
+    .room-gallery__small-image img {
+      display: block;
+      margin: -1px; }
+
+.room-info {
+  display: grid;
+  grid-template-columns: 58% 42%;
+  grid-template-rows: auto;
+  padding: 4.3em 8.7em; }
+  .room-info__wrapper {
+    display: grid;
+    grid-template-columns: 41.7% 58%;
+    grid-template-rows: auto; }
+  .room-info__info {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px; }
+  .room-info__details {
+    margin-top: 1em;
+    padding-left: 3px; }
+  .room-info__shedule {
+    display: flex;
+    flex-wrap: wrap;
+    width: 120px;
+    height: 120px; }
+  .room-info__donut-shedule__donut-chart-block {
+    overflow: hidden; }
+  .room-info__donut-shedule__donut-chart {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%; }
+  .room-info__donut-shedule__donut-chart .center {
+    background: #fff;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: 112px;
+    width: 112px;
+    border-radius: 70px; }
+  .room-info__donut-shedule__clip {
+    border-radius: 50%;
+    clip: rect(0px, 120px, 120px, 61px);
+    height: 100%;
+    position: absolute;
+    width: 100%; }
+  .room-info__donut-shedule__item {
+    border-radius: 50%;
+    clip: rect(0px, 59px, 120px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem; }
+  .room-info__donut-shedule #section1 {
+    transform: rotate(0deg); }
+  .room-info__donut-shedule #section1 item {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    transform: rotate(90deg); }
+  .room-info__donut-shedule #section2 {
+    transform: rotate(90deg); }
+  .room-info__donut-shedule #section2 .item {
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    transform: rotate(90deg); }
+  .room-info__donut-shedule #section4 {
+    transform: rotate(-180deg); }
+  .room-info__donut-shedule #section4 .item {
+    background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+    transform: rotate(180deg); }
+

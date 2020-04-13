@@ -1,0 +1,40 @@
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.eot);
+  /* IE9 Compat Modes */
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.eot?#iefix) format("embedded-opentype"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.woff2) format("woff2"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.woff) format("woff"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.ttf) format("truetype"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-regular.svg#Montserrat) format("svg");
+  /* Legacy iOS */ }
+
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.eot);
+  /* IE9 Compat Modes */
+  src: local("Montserrat Bold"), local("Montserrat-Bold"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.eot?#iefix) format("embedded-opentype"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.woff2) format("woff2"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.woff) format("woff"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.ttf) format("truetype"), url(./src/assets/fonts/montserrat-v14-cyrillic_latin-700.svg#Montserrat) format("svg");
+  /* Legacy iOS */ }
+
+html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #1F2041;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.room-gallery {
+  display: flex; }
+

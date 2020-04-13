@@ -1,0 +1,14 @@
+include ../Room-info
+
+mixin roomReview(imagePath, reviewerName, dayCount, heartPath, likeCount, comment)
+    .room-review
+        .room-review__reviewer-block
+            +roomInfo(imagePath, reviewerName, dayCount)
+        .room-review__comment-block
+            .room-review__comment-block__like
+                .room-review__comment-block__like__item
+                    img(src=heartPath)
+                    span=likeCount
+
+            .room-review__comment-block__comment
+                p=comment

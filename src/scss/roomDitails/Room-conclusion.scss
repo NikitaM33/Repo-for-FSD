@@ -1,0 +1,23 @@
+.rules {
+    list-style: none;
+    margin: 0 0 0 -1.5em;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+
+    &__wrapper {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 10px;
+
+        &__disc {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background: rgba(31, 32, 65, 0.25);
+        }
+    }
+}

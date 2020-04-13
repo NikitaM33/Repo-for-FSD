@@ -1,0 +1,56 @@
+extends ../../layout/mainRoomDitails
+include ../../includes/components/Room-details/Room-info
+include ../../includes/components/Room-details/Room-review/Room-review
+include ../../includes/components/Room-details/Room-conclusion/Room-conclusion
+
+block variables
+    - var roomDitails = 'Детали номера'
+
+block roomDitails
+    .wrapper
+        section
+            .container.room-view
+                .room-gallery
+                    .room-gallery__big-image
+                        a(href="../src/image/view1.png" data-lightbox="roadtrip")
+                            img(src="../src/image/view1.png")
+                    .room-gallery__small-image
+                        a(href="../src/image/view2.png" data-lightbox="roadtrip")
+                            img(src="../src/image/view2.png")
+                        a(href="../src/image/view3.png" data-lightbox="roadtrip")
+                            img(src="../src/image/view3.png")
+        main.main-container
+            .main-container__wrapper
+                section
+                    .room-info
+                        .room-info__wrapper
+                            .room-info__info
+                                label.room-info__label Сведения о номере
+                                .room-info__details
+                                    +roomInfo("./src/image/icon1.svg", "Комфорт", "Шумопоглащающие стены")
+                                .room-info__details
+                                    +roomInfo("./src/image/icon2.svg", "Удобство", "Окно в каждой из спален")
+                                .room-info__details
+                                    +roomInfo("./src/image/icon3.svg", "Уют", "Номер оснащен камином")
+                            .room-info__impression
+                                label.room-info__header Впечатления от номера
+                                .room-info__donut-shedule
+                                    include ../../includes/components/Room-details/Donut-chart/Donut-chart
+
+                section
+                    .room-review
+                        .room-review__header
+                            h3 Отзывы посетителей номера
+                            .room-review__header__item 2 отзыва
+                        .room-review__review-block
+                            +roomReview("./src/image/reviewer1.png", "Мурад Сарафанов", "5 дней назад", "./src/image/FillHeart.svg", "12", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
+                            +roomReview("./src/image/reviewer2.png", "Патрисия Стёклышкова", "Неделю назад", "./src/image/Heart.svg", "2", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
+                
+                section
+                    .conclusion
+                        .conclusion__rules
+                            h3 Правила
+                            +rules("Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия -- после 13:00, а выезд до 12:00")
+                        .conclusion__cancel
+                            h3 Отмена
+                            p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.

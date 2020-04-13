@@ -1,0 +1,161 @@
+/* montserrat-regular - cyrillic_latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../assets/fonts/montserrat-v14-cyrillic_latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-700 - cyrillic_latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../../assets/fonts/montserrat-v14-cyrillic_latin-700.eot'); /* IE9 Compat Modes */
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-700.woff') format('woff'), /* Modern Browsers */
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../../assets/fonts/montserrat-v14-cyrillic_latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+@import "Room-info.scss";
+@import "Donut-chart.scss";
+@import "Room-review.scss";
+@import "Room-conclusion.scss";
+
+html {
+    height: 100%;
+    // overflow: hidden;
+}
+
+body {
+    // CSS фичи #10 ➤ Параллакс эффект на CSS | Parallax Effect CSS without JS
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #1F2041;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.room-view {
+    max-height: 30.3em;
+}
+
+.room-gallery {
+    display: grid;
+    grid-template-columns: 68% 32%;
+    grid-template-rows: auto;
+
+    &__small-image {
+        padding-top: 1px;
+
+        img {
+            display: block;
+            margin: -1px;
+        }
+    }
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 63% 37%;
+    grid-template-rows: auto;
+    padding: 4.3em 8.7em 0 8.7em;
+}
+
+.room-info {
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 41.7% 58%;
+        grid-template-rows: auto;
+    }
+
+    &__info {
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    &__details {
+        margin-top: 1em;
+        padding-left: 3px;
+
+        &:last-child {
+            .room-item {
+                border-bottom: none;
+            }
+        }
+    }
+
+    &__impression {
+        padding: 0 3.5em;
+    }
+
+    &__header {
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    &__donut-shedule {
+        padding-top: 1.3em;
+    }
+}
+
+.room-review {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.8em;
+
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        &__item {
+            margin: 8px 22px 0px 0px;
+            font-size: 14px;
+            line-height: 14px;
+            color: rgba(31, 32, 65, 0.5);
+        }
+    }
+
+    .room-item__text label {
+        line-height: 27px;
+    }
+}
+
+.conclusion {
+    display: grid;
+    grid-template-columns: 35% 45%;
+    grid-template-rows: auto;
+    gap: 14%;
+
+    &__rules {
+        margin: 2em 0em 0em 1.3em;
+
+        h3 {
+            margin: 0 0 0.9em 0; 
+        }
+
+        .rules__wrapper:last-child .rules__wrapper__disc {
+            width: 14px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+block variables
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="keyword" content="find, hotel")
+        meta(name="description" content="find the hotel")
+        link(rel="stylesheet" href!="<%=htmlWebpackPlugin.files.chunks.main.css %>")
+        link(rel="stylesheet" href!="<%=htmlWebpackPlugin.files.chunks.roomDitails.css %>")
+        title=pageTitle
+
+body.wrapper
+    include ../includes/modules/header
+    block roomDitails
+    include ../includes/modules/footer
+    script(src!="<%= htmlWebpackPlugin.files.chunks.roomDitails.entry %>")

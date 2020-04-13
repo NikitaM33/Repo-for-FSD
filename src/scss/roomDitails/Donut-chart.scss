@@ -1,0 +1,146 @@
+.donut-grafic {
+    
+    &__shedule {
+        display: inline-block;
+    }
+
+    &__donut {
+        display: flex;
+
+        &__donut-chart-block {
+            overflow: hidden;
+        }
+        
+        .donut-chart {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            border-radius: 100%
+        }
+        
+        .donut-chart .center {
+            background: #fff;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            height: 112px;
+            width: 112px;
+            border-radius: 70px;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #BC9CFF;
+
+            &__votes-count {
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            &__votes {
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: uppercase;
+            }
+        }
+        
+        .clip {
+            border-radius: 50%;
+            clip: rect(0px, 120px, 120px, 61px);
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+        
+        .item {
+            border-radius: 50%;
+            clip: rect(0px, 59px, 120px, 0px);
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            font-family: monospace;
+            font-size: 1.5rem;
+        }
+        
+        #section1 {
+            transform: rotate(0deg);
+        }
+        
+        #section1 .item {
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            transform: rotate(90deg);
+        }
+        
+        #section2 {
+            transform: rotate(90deg);
+        }
+        
+        #section2 .item {
+            background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+            transform: rotate(90deg);
+        }
+        
+        // #section3 {
+        //     transform: rotate(119deg);
+        // }
+        
+        // #section3 .item {
+        //     background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+        //     transform: rotate(113deg);
+        // }
+        
+        #section4 {
+            transform: rotate(-180deg);
+        }
+        
+        #section4 .item {
+            background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+            transform: rotate(180deg);
+        }
+    }
+
+    &__group {
+        margin-left: 1.9em;
+        padding-top: 1.8em;
+
+        &__section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.3em;
+            font-size: 14px;
+            line-height: 20px;
+            color: rgba(31, 32, 65, 0.75);
+
+            &__item1,
+            &__item2,
+            &__item3,
+            &__item4 {
+                width: 10px;
+                height: 10px;
+                margin-right: 5px;
+                border-radius: 50%;
+            }
+
+            &__item1 {
+                background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+            }
+
+            &__item2 {
+                background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+            }
+
+            &__item3 {
+                background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            }
+
+            &__item4 {
+                background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+            }
+        }
+    }
+}

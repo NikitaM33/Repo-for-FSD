@@ -9,17 +9,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
     entry: {
         main: './src/index.js',
-        searchedRoom: './src/pug/pages/searchedRoom/searchedRoom.js'
+        searchedRoom: './src/pug/pages/searchedRoom/searchedRoom.js',
+        roomDitails: './src/pug/pages/roomDitails/roomDitails.js'
     },
 
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
     },
-
-    // resolve: {
-    //     modulesDirectories: ['node_modules']
-    // },
 
     module: {
         rules: [
@@ -77,6 +74,13 @@ module.exports = {
             hash: true,
             template: './src/pug/pages/searchedRoom/searchedRoom.html',
             filename: 'searchedRoom.html'
+        }),
+
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/pug/pages/roomDitails/roomditails.html',
+            filename: 'roomditails.html'
         }),
 
         new webpack.ProvidePlugin({

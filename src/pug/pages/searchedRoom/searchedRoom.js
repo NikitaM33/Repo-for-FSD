@@ -1,5 +1,5 @@
 import '../../../scss/searchedRoom/searchedRoom.scss';
-import '../../../scss/main.scss';
+// import '../../../scss/main.scss';
 
 console.log('Searched room');
 
