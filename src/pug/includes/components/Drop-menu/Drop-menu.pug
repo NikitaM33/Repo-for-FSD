@@ -1,6 +1,6 @@
 include ../Forms/FormItems/formInput
 
-mixin dropMenu(inputType, countFacilities, firstLabelName, secondLabelName, thirdLabelName)
+mixin dropMenu(inputType, countFacilities, firstLabelName, secondLabelName, thirdLabelName, bottomBtn)
     .drop-menu
         .displayed-field
             +formInput(inputType, countFacilities)
@@ -10,17 +10,22 @@ mixin dropMenu(inputType, countFacilities, firstLabelName, secondLabelName, thir
         .choice-field
             .choice-field__button
                 label=firstLabelName
-                div.minus -
+                .minus -
                 input(type="text" value="1" readonly).quantity
-                div.plus +
+                .plus +
             .choice-field__button
                 label=secondLabelName
-                div.minus -
+                .minus -
                 input(type="text" value="1").quantity
-                div.plus +
+                .plus +
             .choice-field__button
                 label=thirdLabelName
-                div.minus -
+                .minus -
                 input(type="text" value="1").quantity
-                div.plus +
-        
+                .plus +
+            if bottomBtn
+                .choice-field__buttons.buttons-wrapper
+                    .buttons-wrapper__clean
+                        button Очистить
+                    .buttons-wrapper__apply
+                        button Применить

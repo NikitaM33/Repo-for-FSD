@@ -10,7 +10,8 @@ module.exports = {
     entry: {
         main: './src/index.js',
         searchedRoom: './src/pug/pages/searchedRoom/searchedRoom.js',
-        roomDitails: './src/pug/pages/roomDitails/roomDitails.js'
+        roomDitails: './src/pug/pages/roomDitails/roomDitails.js',
+        signup: './src/pug/pages/signup/signup.js'
     },
 
     output: {
@@ -81,6 +82,13 @@ module.exports = {
             hash: true,
             template: './src/pug/pages/roomDitails/roomditails.html',
             filename: 'roomditails.html'
+        }),
+
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/pug/pages/signup/signup.html',
+            filename: 'signup.html'
         }),
 
         new webpack.ProvidePlugin({

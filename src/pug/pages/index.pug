@@ -1,4 +1,5 @@
 extends ../layout/main
+include ../includes/components/Forms/MainForm/MainForm
 
 block variables
     - var pageTitle = 'Toxin'
@@ -8,7 +9,8 @@ block content
         section
             .container
                 .imageBackGround
-                    include ../includes/components/Forms/MainForm/MainForm
+                    .form-wrapper
+                        +mainForm("Найдем номера под ваши пожелания", numberHeader, lux, price, "text", "Сколько гостей", "Взрослые", "Дети", "Младенцы", countDay, midPrice, discount, totalDiscount, added, totalPrice, "Подобрать номер", "./searchedRoom.html", true, true)
                     span
                         p Лучшие номера для вашей работы, отдыха и просто вдохновения и не только
 

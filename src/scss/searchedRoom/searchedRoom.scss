@@ -123,8 +123,12 @@ body {
     line-height: 15px;
     text-transform: uppercase;
 
-    .facilities__drop-menu {
+    &__drop-menu {
         margin-top: 0.5em;
+
+        .drop-menu {
+            margin-top: 1em;
+        }
     }
 }
 

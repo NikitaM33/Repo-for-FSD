@@ -1,4 +1,5 @@
 .drop-menu {
+    position: relative;
     
     .displayed-field {
         display: flex;
@@ -15,7 +16,8 @@
         }
 
         .arrow-down {
-            width: 100%;
+            width: 1em;
+            margin-left: auto;
             padding: 10px;
             text-align: center;
         }
@@ -28,7 +30,8 @@
     .choice-field {
         position: absolute;
         display: none;
-        width: 18.4%;
+        // width: 18.4%;
+        width: 99.2%;
         background: #fff;
         border: 1px solid rgba(31, 32, 65, 0.25);
         border-top: none;
@@ -92,6 +95,45 @@
         .plus,
         .minus {
             user-select: none;
+        }
+    }
+
+    .buttons-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 19px;
+        margin-bottom: 13px;
+
+        &__clean,
+        &__apply {
+            button {
+                font-family: Montserrat;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: uppercase;
+                color: rgba(31, 32, 65, 0.5);
+                background: inherit;
+                border: none;
+                outline: none;
+                cursor: pointer;
+
+                &:hover {
+                    color: #BC9CFF;
+                }
+            }
+        }
+
+        &__clean {
+            button {
+                margin-left: 14px;
+            }
+        }
+
+        &__apply {
+            button {
+                margin-right: 7px;
+            }
         }
     }
 }

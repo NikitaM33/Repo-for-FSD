@@ -7,23 +7,76 @@ block variables
     - var secondLabelName = 'Дети'
     - var thirdLabelName = 'Младенцы'
 
-.main-form
-    .main-form__header
-        h2 Найдем номера под <br />ваши пожелания
-    .search-form
-        .search-form__arrival-departure
-            .arrival-input
-                label Прибытие
-                br
-                input(type="date")
-            .departure-input
-                label Выезд
-                br
-                input(type="date")
-        .search-form__guests-input
-            label Гости
-            +dropMenu('text', 'Сколько гостей', 'Взрослые', 'Дети', 'Младенцы')
-            //- input(type="text" placeholder="Сколько гостей")
-    .search-form__button
-        .search-form__button_size
-            +BigVelvetFillBtn('Подобрать номер', './searchedRoom.html', arrow)
+mixin mainForm(headerName, numberHeader, lux, price, inputType, countFacilities, firstLabelName, secondLabelName, thirdLabelName, countDay, midPrice, discount, totalDiscount, added, totalPrice, buttonName, buttonLink, arrow, bottomBtn)
+    .main-form
+        .main-form__header
+            .main-form__header__wrapper
+                if numberHeader
+                    span.main-form__header__item №
+                    h2=numberHeader
+                else 
+                    h2=headerName
+
+                if lux
+                    span.main-form__header__lux Люкс
+                else
+                    span
+            .main-form__header__pricePerDay
+                if price
+                    span.main-form__header__pricePerDay__item=price
+                        span &#8381;
+                    span.main-form__header__text в сутки
+                else
+                    span
+        .search-form
+            .search-form__arrival-departure
+                .arrival-input
+                    label Прибытие
+                    br
+                    input(type="date")
+                .departure-input
+                    label Выезд
+                    br
+                    input(type="date")
+            .search-form__guests-input
+                label Гости
+                +dropMenu(inputType, countFacilities, firstLabelName, secondLabelName, thirdLabelName, bottomBtn)
+        if price
+            .price-info
+                span.price-info__price-counter
+                    span.price-info__text-wrapper
+                        span=price
+                        span &#8381; 
+                        span X 
+                        span=countDay
+                        span суток
+                    span.price-info__price-wrapper
+                        span.price-info__intermediate-price=midPrice 
+                        span &#8381;
+                span.price-info__service
+                    span.price-info__text-wrapper
+                        span.price-info__service-wrapper Сбор за услуги: скидка 
+                        span=discount
+                        span &#8381;
+                        a(href="#info-discount").price-info__discount-info-mark i
+                    span.price-info__price-wrapper
+                        span.price-info__total-discount=totalDiscount
+                        span &#8381;
+                span.price-info__added-service
+                    span.price-info__text-wrapper
+                        span.price-info__text Сбор за дополнительные услуги
+                        a(href="#info-service").price-info__service-info-mark i
+                    span.price-info__price-wrapper
+                        span.price-info__total-added=added
+                        span &#8381;
+            span.total-price
+                span Итого 
+                span.total-price__dots 
+                span.total-price__price-wrapper
+                    span=totalPrice
+                    span &#8381;
+        else
+            span
+        .search-form__button
+            .search-form__button_size
+                +BigVelvetFillBtn(buttonName, buttonLink, arrow)

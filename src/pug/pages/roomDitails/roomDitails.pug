@@ -2,6 +2,7 @@ extends ../../layout/mainRoomDitails
 include ../../includes/components/Room-details/Room-info
 include ../../includes/components/Room-details/Room-review/Room-review
 include ../../includes/components/Room-details/Room-conclusion/Room-conclusion
+include ../../includes/components/Forms/MainForm/MainForm
 
 block variables
     - var roomDitails = 'Детали номера'
@@ -54,3 +55,7 @@ block roomDitails
                         .conclusion__cancel
                             h3 Отмена
                             p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+
+            side
+                .main-container__wrapper-side
+                    +mainForm("","888", true, "9990", "text", 'Сколько гостей', 'Взрослые', 'Дети', 'Младенцы', "4", "39960", "2179", "0", "300", "38081", "Забронировать", '#reserved', true, true)

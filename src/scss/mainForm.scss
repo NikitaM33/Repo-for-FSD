@@ -1,92 +1,175 @@
 .main-form {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    // grid-template-rows: 39% 48% 33%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "formHeader formHeader"
-    "searchForm searchForm"
-    "searchFormBtn searchFormBtn";
-    position: absolute;
-    max-width: 20em;
-    margin: 4.4em 8.8em;
-    padding: 1.2em 1.8em 0 1.8em;
-    background: #fff;
+    padding: 1.2em 2em 1.9em 1.8em;
+    background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
     border-radius: 4px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 
-    .main-form__header {
-        grid-area: formHeader;
-        margin-bottom: 1.2em;
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: -2px;
+        
+        h2 {
+            margin-right: 2px;
+        }
+        
+        span {
+            margin-top: 8px;
+        }
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        &__item {
+            margin-right: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &__lux {
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            color: #BC9CFF;
+            text-transform: uppercase;
+        }
+
+        &__pricePerDay {
+            margin-top: 6px;
+
+            &__item {
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                color: rgba(31, 32, 65, 0.5);
+            }
+        }
+
+        &__text {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: rgba(31, 32, 65, 0.5);
+        }
     }
 
     .search-form {
-        grid-area: searchForm;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "inputDateIn inputDateIn"
-        "guests guests"
-        "searchBtn searchBtn";
-
-        .search-form__arrival-departure {
-            grid-area: inputDateIn;
+        &__arrival-departure {
             display: flex;
-            margin-top: -20px;
-            margin-bottom: 0.5em;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1em;
 
-            label {
-                font-weight: bold;
-                font-size: 12px;
-                text-transform: uppercase;
-            }
+            .arrival-input,
+            .departure-input {
+                label {
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-transform: uppercase;
+                }
 
-            input {
-                width: 11em;
-                height: 3em;
-                padding: 0px 8px;
-                box-sizing: border-box;
-                border: 1px solid rgba(31, 32, 65, 0.25);
-                border-radius: 5px;
-            }
-
-            .arrival-input {
-                margin-right: 1.5em;
+                input {
+                    width: 11.2em;
+                    height: 3.3em;
+                    padding: 0px 8px;
+                    margin-top: 4px;
+                    box-sizing: border-box;
+                    border: 1px solid rgba(31, 32, 65, 0.25);
+                    border-radius: 5px;
+                }
             }
         }
 
-        .search-form__guests-input {
-            grid-area: guests;
-            margin-top: 1em;
-
+        &__guests-input {
             label {
                 font-weight: bold;
                 font-size: 12px;
+                line-height: 15px;
                 text-transform: uppercase;
             }
 
-            // input {
-                // width: 24em;
-                // height: 3em;
-                // margin-right: 3em;
-                // margin-top: 0.2em;
-                // box-sizing: border-box;
-                // border: 1px solid rgba(31, 32, 65, 0.25);
-                // border-radius: 5px;
-                // padding: 1em;
-            // }
+            .drop-menu {
+                margin-top: 4px;
+            }
+        }
+
+        &__button {
+            margin-top: 2.3em;
         }
     }
 
-    .search-form__button{
-        grid-area: searchFormBtn;
-        padding: 2.3em 0 2em 0;
+    .price-info {
+        position: relative;
+        margin-top: 1.6em;
+        margin-bottom: 1.7em;
+        font-size: 14px;
+        line-height: 23px;
+        color: rgba(31, 32, 65, 0.75);
 
-        .search-form__button_size {
-            max-width: 100%;
-            height: 2.5em;
+        &__price-counter,
+        &__service,
+        &__added-service {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.8em;
+        }
+
+        &__text-wrapper {
+            max-width: 15.7em;
+        }
+
+        &__discount-info-mark,
+        &__service-info-mark {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 5.6em;
+            width: 20px;
+            height: 20px;
+            text-decoration: none;
+            color: rgba(31, 32, 65, 0.5);
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            border-radius: 50%;
+            box-sizing: border-box;
+
+            &:hover {
+                color: #BC9CFF;
+                border: 1px solid #BC9CFF;
+            }
+        }
+
+        &__discount-info-mark {
+            bottom: 4.3em;
+        }
+
+        &__service-info-mark {
+            bottom: 1.75em;
+            padding-top: 2px;
+        }
+    }
+
+    .total-price {
+        display: flex;
+        justify-content: space-between;
+        // margin-bottom: 1em;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+
+        &__dots {
+            width: 100%;
+            height: 0.9em;
+            margin-right: 5px;
+            margin-left: 5px;
+            border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
         }
     }
 }
