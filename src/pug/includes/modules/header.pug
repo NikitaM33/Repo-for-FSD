@@ -14,7 +14,7 @@ header.header
             +headerNav("#", "Соглашения")
     
     .header-buttons
-        span
-            +SignInButton("Войти")
-        span
-            +SignUpButton("Зарегестрироваться")
+        .header-buttons__signin-wrap
+            +SignInButton("Войти", "./signin.html")
+        .header-buttons__signup-wrap
+            +SignUpButton("Зарегестрироваться", "./signup.html")

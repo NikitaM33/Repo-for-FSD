@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pug/pages/signup/signup.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/pug/pages/signin/signin.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/signup/signup.scss":
+/***/ "./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/signin/signin.scss":
 /*!**********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/scss/signup/signup.scss ***!
+  !*** ./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js!./src/scss/signin/signin.scss ***!
   \**********************************************************************************************************************************************************************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleNotFoundError: Module not found: Error: Can't resolve '../' in 'C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\src\\\\scss\\\\signup'\\n    at factory.create (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\webpack\\\\lib\\\\Compilation.js:925:10)\\n    at factory (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:401:22)\\n    at resolver (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:130:21)\\n    at asyncLib.parallel (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:224:22)\\n    at C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\neo-async\\\\async.js:2830:7\\n    at C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\neo-async\\\\async.js:6877:13\\n    at normalResolver.resolve (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\webpack\\\\lib\\\\NormalModuleFactory.js:214:25)\\n    at doResolve (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:213:14)\\n    at hook.callAsync (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:285:5)\\n    at _fn0 (eval at create (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:15:1)\\n    at resolver.doResolve (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\UnsafeCachePlugin.js:44:7)\\n    at hook.callAsync (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:285:5)\\n    at _fn0 (eval at create (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:15:1)\\n    at hook.callAsync (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:285:5)\\n    at _fn0 (eval at create (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:27:1)\\n    at resolver.doResolve (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\DescriptionFilePlugin.js:67:43)\\n    at hook.callAsync (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:285:5)\\n    at _fn42 (eval at create (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:16:1)\\n    at hook.callAsync (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:285:5)\\n    at _fn0 (eval at create (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:27:1)\\n    at resolver.doResolve (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\DescriptionFilePlugin.js:67:43)\\n    at hook.callAsync (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:285:5)\\n    at _fn1 (eval at create (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:16:1)\\n    at hook.callAsync (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:285:5)\\n    at _fn0 (eval at create (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:15:1)\\n    at hook.callAsync (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:285:5)\\n    at _fn3 (eval at create (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:16:1)\\n    at hook.callAsync (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\Resolver.js:285:5)\\n    at _fn0 (eval at create (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\tapable\\\\lib\\\\HookCodeFactory.js:33:10), <anonymous>:27:1)\\n    at resolver.doResolve (C:\\\\Users\\\\Admin\\\\Desktop\\\\project-for-real-work\\\\node_modules\\\\enhanced-resolve\\\\lib\\\\DescriptionFilePlugin.js:67:43)\");\n\n//# sourceURL=webpack:///./src/scss/signup/signup.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./src/scss/signin/signin.scss?./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -109,26 +109,26 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
-/***/ "./src/pug/pages/signup/signup.js":
+/***/ "./src/pug/pages/signin/signin.js":
 /*!****************************************!*\
-  !*** ./src/pug/pages/signup/signup.js ***!
+  !*** ./src/pug/pages/signin/signin.js ***!
   \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ../../../scss/signup/signup.scss */ \"./src/scss/signup/signup.scss\");\n\nconsole.log(\"signup page\");\n\n//# sourceURL=webpack:///./src/pug/pages/signup/signup.js?");
+eval("\n\n__webpack_require__(/*! ../../../scss/signin/signin.scss */ \"./src/scss/signin/signin.scss\");\n\nconsole.log(\"signin page\");\n\n//# sourceURL=webpack:///./src/pug/pages/signin/signin.js?");
 
 /***/ }),
 
-/***/ "./src/scss/signup/signup.scss":
+/***/ "./src/scss/signin/signin.scss":
 /*!*************************************!*\
-  !*** ./src/scss/signup/signup.scss ***!
+  !*** ./src/scss/signin/signin.scss ***!
   \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/src!../../../node_modules/sass-loader/dist/cjs.js!./signup.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/signup/signup.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/scss/signup/signup.scss?");
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/mini-css-extract-plugin/dist/loader.js!../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/src!../../../node_modules/sass-loader/dist/cjs.js!./signin.scss */ \"./node_modules/mini-css-extract-plugin/dist/loader.js!./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/signin/signin.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./src/scss/signin/signin.scss?");
 
 /***/ })
 

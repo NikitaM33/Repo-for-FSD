@@ -1,0 +1,15 @@
+extends ../../layout/Signin
+include ../../includes/components/Forms/SignupForm/SignupForm
+
+block variables
+    - var pageTitle = 'Sign in'
+
+block content
+    main
+        section
+            .wrapper
+                .login
+                    .login__banner
+                        img(src="../src/image/signupFon.png")
+                    .login__signin-form
+                        +signupForm(false)

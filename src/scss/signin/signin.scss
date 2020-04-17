@@ -24,18 +24,13 @@ src: local('Montserrat Bold'), local('Montserrat-Bold'),
         url('../../assets/fonts/montserrat-v14-cyrillic_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
         url('../../assets/fonts/montserrat-v14-cyrillic_latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
-
-@import 'signupForm.scss';
-@import 'Radio.scss';
-@import 'glideCheckbox.scss';
+@import '../signup/signupForm.scss';
 
 html {
     height: 100%;
-    // overflow: hidden;
 }
 
 body {
-    // CSS фичи #10 ➤ Параллакс эффект на CSS | Parallax Effect CSS without JS
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -46,14 +41,18 @@ body {
     overflow-x: hidden;
 }
 
-.registration {
+.login {
     position: relative;
     display: flex;
     justify-content: center;
 
-    &__signup-form {
+    &__signin-form {
         position: absolute;
-        top: 1.9em;
+        top: 10.1em;
         max-width: 23.8em;
+
+        .signup-form {
+            padding-bottom: 2em
+        }
     }
 }

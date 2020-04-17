@@ -1,3 +1,45 @@
-mixin signupForm()
+include ../../../../utils/Buttons/Buttons
+include ../../../../utils/Radio/Radio
+include ../../../../utils/Checkbox/glideCheckbox
+
+mixin signupForm(newAcc)
     .signup-form
-        h2 Регистрация аккаунта
+        if newAcc
+            h2 Регистрация аккаунта
+        else
+            h2 Войти
+        if newAcc
+            .signup-form__name
+                input(type="text" placeholder="Имя")
+                input(type="text" placeholder="Фамилия")
+            .signup-form__gender
+                .signup-form__radio
+                    +radio("Мужчина")
+                .signup-form__radio
+                    +radio("Женщина")
+            .signup-form__birth
+                label.signup-form__label Дата рождения
+                input(type="date")
+
+        .signup-form__enter-data
+            if newAcc
+                label.signup-form__label Данные для входа в сервис
+            input(type="email" placeholder="Email")
+            input(type="password" placeholder="Пароль")
+
+        if newAcc
+            .signup-form__offer
+                +glideCheckbox("Получать спецпредложения")
+            .signup-form__payButton
+                +BigVelvetFillBtn("Перейти к оплате", "#pay_page", true)
+            .signup-form__enter
+                .signup-form__enter__link Уже есть аккаунт на Toxin
+                .signup-form__enter__btn-wrapper
+                    +SignInButton("Войти", "./signin.html")
+        else
+            .signup-form__payButton
+                +BigVelvetFillBtn("Войти", "./index.html", true)
+            .signup-form__enter
+                .signup-form__enter__link Нет аккаунта на Toxin?
+                .signup-form__enter__btn-wrapper
+                    +SignInButton("Создать", "./signup.html")

@@ -11,7 +11,8 @@ module.exports = {
         main: './src/index.js',
         searchedRoom: './src/pug/pages/searchedRoom/searchedRoom.js',
         roomDitails: './src/pug/pages/roomDitails/roomDitails.js',
-        signup: './src/pug/pages/signup/signup.js'
+        signup: './src/pug/pages/signup/signup.js',
+        signin: './src/pug/pages/signin/signin.js'
     },
 
     output: {
@@ -89,6 +90,13 @@ module.exports = {
             hash: true,
             template: './src/pug/pages/signup/signup.html',
             filename: 'signup.html'
+        }),
+
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/pug/pages/signin/Signin.html',
+            filename: 'signin.html'
         }),
 
         new webpack.ProvidePlugin({

@@ -53,11 +53,8 @@
     display: flex;
     padding: 1.1em 3px;
 
-    span {
+    &__signin-wrap {
+        width: 5.5em;
         margin-right: 1.3em;
-
-        &:last-child {
-            margin-right: 0;
-        }
     }
 }
