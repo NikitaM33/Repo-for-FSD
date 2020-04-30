@@ -15,7 +15,7 @@ mixin mainForm(headerName, numberHeader, lux, price, inputType, countFacilities,
                     span.main-form__header__item №
                     h2=numberHeader
                 else 
-                    h2=headerName
+                    h2 Найдём номера под ваши пожелания
 
                 if lux
                     span.main-form__header__lux Люкс
@@ -29,15 +29,21 @@ mixin mainForm(headerName, numberHeader, lux, price, inputType, countFacilities,
                 else
                     span
         .search-form
-            .search-form__arrival-departure
-                .arrival-input
+            .search-form__arrival-departure.items
+                .items__wrapper
                     label Прибытие
-                    br
-                    input(type="date")
-                .departure-input
+                    .items__input
+                        .items__input__arrival-input
+                            input(type="date")
+                            .arrival-input__arrow
+                                img(src="../src/image/expand_more.png")
+                .items__wrapper
                     label Выезд
-                    br
-                    input(type="date")
+                    .items__input
+                        .items__input__departure-input
+                            input(type="date")
+                            .departure-input__arrow
+                                img(src="../src/image/expand_more.png")
             .search-form__guests-input
                 label Гости
                 +dropMenu(inputType, countFacilities, firstLabelName, secondLabelName, thirdLabelName, bottomBtn)

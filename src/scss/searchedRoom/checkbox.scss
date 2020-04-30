@@ -1,4 +1,5 @@
-.checkbox {
+.checkbox-wrapper {
+    display: flex;
 
     label {
         display: flex;
@@ -10,10 +11,11 @@
 
     .fancy-checkbox {
         display: inline-block;
+        flex: 1 0 auto;
         position: relative;
         width: 20px;
         height: 20px;
-        margin-right: 13px;
+        margin-right: 10px;
         border: 1px solid rgba(31, 32, 65, 0.25);
         box-sizing: border-box;
         border-radius: 4px;

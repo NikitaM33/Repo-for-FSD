@@ -11,35 +11,37 @@ block roomDitails
     .wrapper
         section
             .container.room-view
-                .room-gallery
-                    .room-gallery__big-image
+                .room-view__gallery
+                    .room-view__gallery__big-image
                         a(href="../src/image/view1.png" data-lightbox="roadtrip")
                             img(src="../src/image/view1.png")
-                    .room-gallery__small-image
-                        a(href="../src/image/view2.png" data-lightbox="roadtrip")
-                            img(src="../src/image/view2.png")
-                        a(href="../src/image/view3.png" data-lightbox="roadtrip")
-                            img(src="../src/image/view3.png")
+                    .room-view__gallery__small-image
+                        .room-view__gallery__small-image__img
+                            a(href="../src/image/view2.png" data-lightbox="roadtrip")
+                                img(src="../src/image/view2.png")
+                        .room-view__gallery__small-image__img
+                            a(href="../src/image/view3.png" data-lightbox="roadtrip")
+                                img(src="../src/image/view3.png")
         main.main-container
             .main-container__wrapper
                 section
-                    .room-info
+                    .main-container__wrapper.room-info
                         .room-info__wrapper
                             .room-info__info
                                 label.room-info__label Сведения о номере
                                 .room-info__details
                                     +roomInfo("./src/image/icon1.svg", "Комфорт", "Шумопоглащающие стены")
                                 .room-info__details
-                                    +roomInfo("./src/image/icon2.svg", "Удобство", "Окно в каждой из спален")
+                                    +roomInfo("./src/image/icon3.svg", "Удобство", "Окно в каждой из спален")
                                 .room-info__details
-                                    +roomInfo("./src/image/icon3.svg", "Уют", "Номер оснащен камином")
+                                    +roomInfo("./src/image/icon2.svg", "Уют", "Номер оснащен камином")
                             .room-info__impression
                                 label.room-info__header Впечатления от номера
                                 .room-info__donut-shedule
                                     include ../../includes/components/Room-details/Donut-chart/Donut-chart
 
                 section
-                    .room-review
+                    .main-container__wrapper.room-review
                         .room-review__header
                             h3 Отзывы посетителей номера
                             .room-review__header__item 2 отзыва
@@ -48,7 +50,7 @@ block roomDitails
                             +roomReview("./src/image/reviewer2.png", "Патрисия Стёклышкова", "Неделю назад", "./src/image/Heart.svg", "2", "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
                 
                 section
-                    .conclusion
+                    .main-container__wrapper.conclusion
                         .conclusion__rules
                             h3 Правила
                             +rules("Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия -- после 13:00, а выезд до 12:00")

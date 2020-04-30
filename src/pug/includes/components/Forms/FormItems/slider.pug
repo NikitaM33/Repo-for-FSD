@@ -1,10 +1,14 @@
 .price-range
-    label Диапазон цены
-    span.min-price
-    span  - 
-    span.max-price
+    .price-range__price
+        .price-range__price__label
+            label Диапазон цены
+        .price-range__price__sum       
+            span.min-price
+            span  - 
+            span.max-price
     .slider
         .bar
             .lp(data-pos="0.1")
-            .rp(data-pos="0.8")
+            //- .rp(data-pos="0.8")
+            .rp(data-pos="0.5")
     p Стоимость за сутки пребывания в номере

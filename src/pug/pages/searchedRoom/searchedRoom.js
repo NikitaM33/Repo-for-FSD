@@ -2,7 +2,21 @@ import '../../../scss/searchedRoom/searchedRoom.scss';
 
 console.log('Searched room');
 
-// ================ Date range ==========
+$(document).ready(function() {
+  // ============== Burger menu
+  $('.header__burger').click(function() {
+    $('.header__burger, .header__nav').toggleClass('active');
+    $('body').toggleClass('lock')
+  });
+
+  // ================= Visibility filter ==================
+  $(".filter__displaying-button").click(function() {
+    $(this).next().slideToggle();
+  });
+
+});
+
+// ================ Price range ==========
 var twobombSlider  = (function(){
   var drag = false;
   var values = [];
@@ -111,6 +125,7 @@ $(document).ready(function() {
   $('.updown-arrow').click(function() {
     $(this).parent().next().slideToggle();
   });
+
 
   // ============= Rotate arrow
 

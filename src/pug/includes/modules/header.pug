@@ -2,19 +2,26 @@ include ../../utils/Nav/mixins
 include ../../utils/Buttons/Buttons
 
 header.header
-    .header-logo
-        include ../components/logo/logo
-    
-    .header-nav
-        ul
-            +headerNav("#", "О нас")
-            +headerNav("#", "Услуги")
-            +headerNav("#", "Вакансии")
-            +headerNav("#", "Новости")
-            +headerNav("#", "Соглашения")
-    
-    .header-buttons
-        .header-buttons__signin-wrap
-            +SignInButton("Войти", "./signin.html")
-        .header-buttons__signup-wrap
-            +SignUpButton("Зарегестрироваться", "./signup.html")
+    .header__container
+        .header__logo
+            include ../components/logo/logo
+        
+        .header__nav
+            ul
+                +headerNav("#AboutUs", "О нас")
+                +headerNav("#Service", "Услуги")
+                +headerNav("#Vacancy", "Вакансии")
+                +headerNav("#News", "Новости")
+                +headerNav("#Agreement", "Соглашения")
+                +headerNav("./signin.html", "Войти")
+                +headerNav("./signup.html", "Зарегестрироваться")
+
+        .header__burger
+            .header__burger__wrapper.lines
+                span
+        
+        .header__buttons
+            .header__buttons__signin-wrap
+                +SignInButton("Войти", "./signin.html")
+            .header__buttons__signup-wrap
+                +SignUpButton("Зарегестрироваться", "./signup.html")

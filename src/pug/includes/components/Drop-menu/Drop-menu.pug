@@ -2,7 +2,7 @@ include ../Forms/FormItems/formInput
 
 mixin dropMenu(inputType, countFacilities, firstLabelName, secondLabelName, thirdLabelName, bottomBtn)
     .drop-menu
-        .displayed-field
+        .drop-menu__displaying-field
             +formInput(inputType, countFacilities)
             .arrow-down
                 img(src="../src/image/expand_more.png")

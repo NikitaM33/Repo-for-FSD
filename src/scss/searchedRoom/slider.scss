@@ -1,51 +1,58 @@
 .price-range {
 
-  label {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__label {
+      label {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+      }
+    }
+
+    &__sum {
+      span {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+        text-transform: uppercase;
+        color: rgba(31, 32, 65, 0.5);
+      }
+    }
   }
 
-  span {
-    font-size: 12px;
-    line-height: 15px;
-    text-align: right;
-    text-transform: uppercase;
-    color: rgba(31, 32, 65, 0.5);
-  }
-
-  .min-price {
-    margin-left: 3.7em;
-  }
-
-  .slider{
-    position:relative;
-    width:100%;
-    height:6px;
-    margin-top: 1.4em;
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    margin-top: 1.36em;
     margin-bottom: 0.9em;
     border: 1px solid rgba(31, 32, 65, 0.25);
     box-sizing: border-box;
     border-radius: 3px;
   }
-  .slider .bar{
-    position:absolute;
-    left:50px;
-    width:300px;
+  .slider .bar {
+    position: absolute;
+    left: 50px;
+    width: 150px;
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-    height:100%;
+    height: 100%;
   }
-  .slider .bar .lp span{
+  .slider .bar .lp span {
     position:relative;
     left:-30px;
   }
-  .slider .bar .rp span{
+  .slider .bar .rp span {
     position:relative;
     left:10px;
   }
 
-  .slider .bar .lp,.slider .bar .rp{
+  .slider .bar .lp,.slider .bar .rp {
     cursor: pointer;
     background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
     width:12px;
@@ -58,12 +65,12 @@
     user-select:none;
   }
 
-  .slider .bar .lp{
+  .slider .bar .lp {
     left:0px;
     top:-6px;
   }
 
-  .slider .bar .rp{
+  .slider .bar .rp {
     left: 96%;
     top:-6px;
   }
@@ -72,5 +79,13 @@
     font-size: 12px;
     line-height: 14px;
     color: rgba(31, 32, 65, 0.5);
+  }
+}
+
+@media(max-width: 992px) {
+  .price-range {
+    .slider .bar {
+      width: 80px;
+    }
   }
 }

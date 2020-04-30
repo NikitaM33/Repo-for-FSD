@@ -6,11 +6,14 @@ block variables
 
 block content
     main
-        section
-            .container
-                .imageBackGround
-                    .form-wrapper
-                        +mainForm("Найдем номера под ваши пожелания", numberHeader, lux, price, "text", "Сколько гостей", "Взрослые", "Дети", "Младенцы", countDay, midPrice, discount, totalDiscount, added, totalPrice, "Подобрать номер", "./searchedRoom.html", true, true)
-                    span
-                        p Лучшие номера для вашей работы, отдыха и просто вдохновения и не только
+        section.content-wrapper
+            .imageBackGround
+                .container
+                    .container__form
+                        .form-wrapper
+                            +mainForm("Найдем номера под ваши пожелания", numberHeader, lux, price, "text", "Сколько гостей", "Взрослые", "Дети", "Младенцы", countDay, midPrice, discount, totalDiscount, added, totalPrice, "Подобрать номер", "./searchedRoom.html", true, true)
+                        .text
+                            .text_right
+                                span
+                                    p Лучшие номера для вашей работы, <br/>отдыха и просто вдохновения
 

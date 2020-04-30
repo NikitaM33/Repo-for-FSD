@@ -29,31 +29,59 @@ src: local('Montserrat Bold'), local('Montserrat-Bold'),
 @import 'Radio.scss';
 @import 'glideCheckbox.scss';
 
-html {
-    height: 100%;
-    // overflow: hidden;
-}
-
-body {
-    // CSS фичи #10 ➤ Параллакс эффект на CSS | Parallax Effect CSS without JS
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #1F2041;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
-.registration {
-    position: relative;
+.content-wrapper {
     display: flex;
-    justify-content: center;
+    max-width: 1440px;
 
-    &__signup-form {
-        position: absolute;
-        top: 1.9em;
-        max-width: 23.8em;
+    &__banner {
+        display: flex;
+        flex: 1 0 100%;
+        height: 43.9em;
+        background: url("../../image/signupFon.png") bottom;
+        background-size: cover;
+    }
+
+    .container {
+        max-width: 1173px;
+        margin: 0 auto;
+        padding: 0 10px;
+
+        &__signup-form {
+            flex: 0 0 35.4%;
+            max-width: 23.75em;
+            margin: 0 auto;
+            margin-top: 30px;
+
+            .signup-form {
+                padding-bottom: 1.54em;
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .content-wrapper {
+        max-width: 1173px;
+
+        .container {
+            max-width: 750px;
+            padding: 0;
+        }
+    }
+}
+
+@media(max-width: 390px) {
+    .content-wrapper {
+
+        .container {
+            max-width: 320px;
+
+            &__signup-form {
+
+                .signup-form__name input, .signup-form__birth input, .signup-form__enter-data input {
+                    width: 243px;
+                }
+            }
+        }
     }
 }

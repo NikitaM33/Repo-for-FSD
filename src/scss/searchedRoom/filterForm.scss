@@ -9,25 +9,31 @@
         text-transform: uppercase;
     }
 
-    .filterInput__dateInput {
-        margin-top: 3px;
-        margin-bottom: 1.1em;
-        box-sizing: border-box;
-        background: #fff;
-        border: 1px solid rgba(31, 32, 65, 0.25);
-        border-radius: 4px;
+    .filterInput {
+        &__dateInput {
+            margin-top: 4px;
+            margin-bottom: 1.1em;
+            box-sizing: border-box;
+            background: #fff;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            border-radius: 4px;
 
-        input {
-            width: 91%;
-            padding: 8px;
+            input {
+                width: 91%;
+                padding: 8px 0 8px 8px;
+            }
+
+            input {
+                display: block;
+                font-size: 14px;
+                line-height: 24px;
+                border: none;
+                outline: none;
+            }
         }
 
-        input {
-            display: block;
-            font-size: 14px;
-            line-height: 24px;
-            border: none;
-            outline: none;
+        &__dropMenu {
+            margin-top: 3px;
         }
     }
 }

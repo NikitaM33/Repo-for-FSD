@@ -12,34 +12,41 @@ block searchingcontent
             .container
                 .searchedRoom-wrapper
                     //- ================== Filter bar
-                    aside.filter
-                        .room-filter
-                            .room-filter__searchingFilter
-                                include ../../includes/components/Forms/FilterForm/FilterForm
-                        .coast-filter
-                            .coast-filter__slider
-                                include ../../includes/components/Forms/FormItems/slider.pug
-                        .checkbox-group
-                            .checkbox-group__checkbox
-                                .checkbox-group__label Дополнительные опции
-                                +checkbox('Можно курить')
-                                +checkbox('Можно с питомцами')
-                                +checkbox('Можно пригласить гостей (до 10 человек)')
-                        .availability 
-                            .availability-group__checkbox
-                                .availability__label Доступность
-                                +checkbox( 'Ширина коридора в номере не менее 91 см','Широкий коридор')
-                                +checkbox('На 1 этаже вас встретит специалист и проводит до номера', 'Помощник для инвалидов')
-                        .facilities Удобства номера
-                            .facilities__drop-menu
-                                +dropMenu('text', '1 спальня, 1 кровать...', 'Спальни', 'Кровати', 'Ванные комнаты', false)
-                        .additional-facilities
-                            .facilities__dropCheckbox
-                                include ../../includes/components/Drop-checkbox/Drop-checkbox
+                    aside.searchedRoom-wrapper__filter.filter
+                        .filter__displaying-button
+                            .filter__displaying-button__wrapper
+                                h4 Открыть фильтр
+                                .filter__arrow
+                                    img(src="../src/image/expand_more.png")
+
+                        .filter__filter-wrapper
+                            .filter__room-filter
+                                .filter__room-filter__searchingFilter
+                                    include ../../includes/components/Forms/FilterForm/FilterForm
+                            .filter__coast-filter
+                                .filter__coast-filter__slider
+                                    include ../../includes/components/Forms/FormItems/slider.pug
+                            .filter__checkbox-group
+                                .filter__checkbox-group__checkbox
+                                    .filter__checkbox-group__label Дополнительные опции
+                                    +checkbox('Можно курить')
+                                    +checkbox('Можно с питомцами')
+                                    +checkbox('Можно пригласить гостей (до 10 человек)')
+                            .filter__availability 
+                                .filter__availability-group__checkbox
+                                    .filter__availability-group__label Доступность
+                                    +checkbox( 'Ширина коридора в номере не менее 91 см','Широкий коридор')
+                                    +checkbox('На 1 этаже вас встретит специалист и проводит до номера', 'Помощник для инвалидов')
+                            .filter__facilities Удобства номера
+                                .filter__facilities__drop-menu
+                                    +dropMenu('text', '1 спальня, 1 кровать...', 'Спальни', 'Кровати', 'Ванные комнаты', false)
+                            .filter__additional-facilities
+                                .filter__additional-facilities__dropCheckbox
+                                    include ../../includes/components/Drop-checkbox/Drop-checkbox
 
                     //- ======================= Result of search
                     main.filter-result
-                        label Номера, которые мы для вас подобрали
+                        h4 Номера, которые мы для вас подобрали
                         .filter-result__card
                             +roomCard('../src/image/888.png', '../src/image/888.png', '../src/image/888.png', '../src/image/888.png', './roomditails.html', '888', true, '9990', '145')
                             +roomCard('../src/image/840.png', '../src/image/840.png', '../src/image/840.png', '../src/image/840.png', './roomditails.html','840', false, '9990', '65')

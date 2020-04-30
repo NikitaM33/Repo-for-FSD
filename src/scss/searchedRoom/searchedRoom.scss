@@ -36,121 +36,186 @@ src: local('Montserrat Bold'), local('Montserrat-Bold'),
 @import 'Next-btn.scss';
 @import 'Prev-btn.scss';
 
-html {
-    height: 100%;
-    // overflow: hidden;
-}
-
-body {
-    // CSS фичи #10 ➤ Параллакс эффект на CSS | Parallax Effect CSS without JS
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #1F2041;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
-.wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
+// ================== Filter bar
 
 .searchedRoom-wrapper {
     display: grid;
-    grid-template-columns: 23% 72%;
+    grid-template-columns: 22.95% 72%;
     grid-template-rows: auto;
-    gap: 3.7em;
-    padding: 0 8.8em;
-}
+    gap: 5.15%;
+    max-width: 1161px;
+    margin: 0 auto;
+    padding: 0 10px;
 
-.coast-filter__slider {
-    margin-top: 1.7em;
-}
+    .filter {
 
-.checkbox-group {
-    margin-top: 1.7em;
+        &__displaying-button {
+            display: none;
+            
+            &__wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 1em;
+            }
 
-    .checkbox-group__checkbox {
-        label {
-            margin-bottom: 10px;
+            h4 {
+                margin-right: 1em;
+            }
+        }
+
+        &__filter-wrapper {
+            display: block;
+        }
+        
+        &__coast-filter {
+            &__slider {
+                margin-top: 1.74em;
+            }
+        }
+
+        &__checkbox-group {
+            margin-top: 1.8em;
+
+            &__checkbox {
+                label {
+                    margin-bottom: 10px;
+                }
+            }
+
+            &__label {
+                margin-bottom: 1.42em;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: uppercase;
+            }
+        }
+
+        &__availability {
+            margin-top: 1.9em;
+
+            &-group {
+                &__checkbox {
+                    label {
+                        margin-bottom: 6px;
+                    }
+                }
+
+                &__label {
+                    margin-bottom: 1.3em;
+                    font-weight: bold;
+                    font-size: 12px;
+                    line-height: 15px;
+                    text-transform: uppercase; 
+                }
+            }
+
+            .bold-name {
+                font-weight: bold;
+            }
+            
+            .checkbox-label {
+                font-size: 12px !important;
+                line-height: 14px !important;
+            }
+        }
+
+        &__facilities {
+            margin-top: 2.3em;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+
+            &__drop-menu {
+                margin-top: 4px;
+
+                .arrow-down {
+                    padding: 13px 14px;
+                }
+            }
+        }
+
+        &__additional-facilities {
+            margin-top: 1.8em;
         }
     }
 
-    .checkbox-group__label {
-        margin-bottom: 1.7em;
+    // ======================= Result of search
+
+    .filter-result {
+        padding: 1.33em 10px 0 0;
         font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase;
-    }
-}
+        font-size: 23px;
+        line-height: 30px;
 
-.availability {
-    margin-top: 1.7em;
-
-    .availability-group__checkbox {
-        label {
-            margin-bottom: 5px;
+        h4 {
+            margin: 0;
         }
-    }
+        
+        &__card {
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: auto;
+            gap: 5px;
+            margin-top: 0.9em;
+        }
 
-    .availability__label {
-        margin-bottom: 1.7em;
-        font-weight: bold;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: uppercase;
-    }
-
-    .bold-name {
-        font-weight: bold;
-    }
-    
-    .checkbox-label {
-        font-size: 12px !important;
-        line-height: 14px !important;
-    }
-}
-
-.facilities {
-    margin-top: 2em;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-
-    &__drop-menu {
-        margin-top: 0.5em;
-
-        .drop-menu {
-            margin-top: 1em;
+        &__pagination-container {
+            margin-top: 1.4em;
         }
     }
 }
 
-.additional-facilities {
-    margin-top: 2.2em;
+@media(max-width: 992px) {
+    .searchedRoom-wrapper {
+        max-width: 750px;
+
+        .filter-result {
+            &__card {
+                grid-template-columns: 50% 50%;
+            }
+        }
+    }
 }
 
-.filter-result {
-    padding-top: 1.3em;
-    font-weight: bold;
-    font-size: 23px;
-    line-height: 30px;
-    
-    &__card {
-        display: grid;
-        grid-template-columns: 33.3% 33.3% 33.3%;
-        grid-template-rows: auto;
-        gap: 5px;
-        margin-top: 0.9em;
-    }
+@media(max-width: 767px) {
+    .searchedRoom-wrapper {
+        grid-template-columns: 100%;
+        gap: 0%;
+        max-width: 630px;
 
-    &__pagination-container {
-        margin-top: 1.4em;
+        .filter {
+            &__displaying-button {
+                display: block;
+            }
+
+            &__filter-wrapper {
+                display: none;
+                padding-bottom: 2em;
+                border-bottom: 1px solid rgba(31, 32, 65, 0.25);;
+            }
+        }
+    }
+}
+
+@media(max-width: 537px) {
+    .searchedRoom-wrapper {
+        .filter-result {
+            padding: 1.33em 0 0 0;
+
+            &__card {
+                grid-template-columns: 100%;
+            }
+
+            h4 {
+                text-align: center;
+            }
+
+            .card-wrapper {
+                margin: 6.5px auto;
+            }
+        }
     }
 }
