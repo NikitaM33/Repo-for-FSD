@@ -1,0 +1,118 @@
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.6em;
+}
+
+.pagination__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.pagination .pagination__btn_hide {
+  display: none;
+}
+
+.pagination__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pagination__item {
+  font-weight: normal;
+}
+
+.pagination__item:hover {
+  font-weight: bold;
+}
+
+.pagination .pagination__item_active .pagination__link {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 50%;
+}
+
+.pagination__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.pagination__else-pages {
+  font-weight: normal;
+}
+
+.pagination__else-pages:hover {
+  font-weight: bold;
+}
+
+.pagination__text {
+  font-weight: normal;
+}
+
+.pagination__text:hover {
+  font-weight: bold;
+}
+
+.pagination__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.3em;
+  margin-right: 0.7em;
+}
+
+.pagination__info p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+/*# sourceMappingURL=Pagination.css.map */

@@ -1,0 +1,35 @@
+.rules {
+  list-style: none;
+  margin: 0 0 0 -1.5em;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.rules__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.rules__wrapper__disc {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: rgba(31, 32, 65, 0.25);
+}
+
+@media (max-width: 700px) {
+  .rules {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=Room-conclusion.css.map */

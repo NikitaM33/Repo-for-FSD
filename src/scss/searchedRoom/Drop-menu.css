@@ -1,0 +1,191 @@
+.drop-menu {
+  position: relative;
+}
+
+.drop-menu__displaying-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 5px 5px 5px 5px;
+}
+
+.drop-menu__displaying-field input {
+  width: 100%;
+  padding: 14px 0 13px 15px;
+  border: none;
+  outline: none;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.drop-menu__displaying-field .arrow-down {
+  margin-left: auto;
+  padding: 10px 14px;
+  text-align: center;
+}
+
+.drop-menu__displaying-field img {
+  text-align: center;
+}
+
+.drop-menu .choice-field {
+  position: absolute;
+  display: none;
+  width: 99.2%;
+  background: #fff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  z-index: 1;
+}
+
+.drop-menu .choice-field__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7px 7px 7px 15px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.drop-menu .choice-field__button label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 62%;
+          flex: 0 0 62%;
+}
+
+.drop-menu .choice-field__button div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  color: rgba(31, 32, 65, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-radius: 22px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.drop-menu .choice-field__button div:hover {
+  color: #BC9CFF;
+  border: 1px solid #BC9CFF;
+}
+
+.drop-menu .choice-field__button .quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 7px;
+  margin: 0 auto;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+.drop-menu .choice-field__button .disabled {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.drop-menu .choice-field__button .disabled:hover {
+  color: rgba(31, 32, 65, 0.25);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.drop-menu .choice-field__button .plus,
+.drop-menu .choice-field__button .minus {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.drop-menu .buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 19px;
+  margin-bottom: 13px;
+}
+
+.drop-menu .buttons-wrapper__clean button, .drop-menu .buttons-wrapper__apply button {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+  background: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.drop-menu .buttons-wrapper__clean button:hover, .drop-menu .buttons-wrapper__apply button:hover {
+  color: #BC9CFF;
+}
+
+.drop-menu .buttons-wrapper__clean button {
+  margin-left: 14px;
+}
+
+.drop-menu .buttons-wrapper__apply button {
+  margin-right: 7px;
+}
+
+@media (max-width: 992px) {
+  .drop-menu__displaying-field input {
+    width: 71%;
+  }
+  .drop-menu__displaying-field .arrow-down {
+    padding: 10px 7px;
+  }
+  .drop-menu .choice-field__button label {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 62%;
+            flex: 0 1 62%;
+  }
+}
+
+@media (max-width: 767px) {
+  .drop-menu .choice-field__button .quantity {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+}
+/*# sourceMappingURL=Drop-menu.css.map */

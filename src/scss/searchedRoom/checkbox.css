@@ -1,0 +1,78 @@
+.checkbox-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkbox-wrapper label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkbox-wrapper .checkbox {
+  display: none;
+}
+
+.checkbox-wrapper .fancy-checkbox {
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkbox-wrapper .fancy-checkbox:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 8px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url(../../image/Vector.png);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox-wrapper .fancy-checkbox:last-child {
+  height: 25px;
+}
+
+.checkbox-wrapper .checkbox:checked + .fancy-checkbox {
+  border: 1px solid #BC9CFF;
+}
+
+.checkbox-wrapper .checkbox:checked + .fancy-checkbox:before {
+  opacity: 1;
+}
+
+.checkbox-wrapper .fancy-wrapper {
+  max-width: 15em;
+}
+
+.checkbox-wrapper .fancy-wrapper .bold-name,
+.checkbox-wrapper .fancy-wrapper .checkbox-label {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.checkbox-wrapper .fancy-wrapper .bold-name {
+  display: block;
+}
+
+.checkbox-wrapper .fancy-wrapper .checkbox-label {
+  color: rgba(31, 32, 65, 0.5);
+}
+/*# sourceMappingURL=checkbox.css.map */

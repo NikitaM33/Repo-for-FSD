@@ -29,3 +29,22 @@
         }
     }
 }
+
+@media(max-width: 710px) {
+    .postFooter {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+
+        .copyright {
+            max-width: 90%;
+            margin: 1em auto;
+
+        }
+
+        .social-icons {
+            max-width: 8em;
+            margin: 0 auto;
+        }
+    }
+}

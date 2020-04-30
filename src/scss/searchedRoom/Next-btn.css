@@ -1,0 +1,20 @@
+.next-btn {
+  display: inline-block;
+  width: 1.7em;
+  height: 1.7em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.next-btn img {
+  vertical-align: sub;
+}
+
+.next-btn:hover {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=Next-btn.css.map */

@@ -1,0 +1,160 @@
+.donut-grafic__shedule {
+  display: inline-block;
+}
+
+.donut-grafic__donut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.donut-grafic__donut__donut-chart-block {
+  overflow: hidden;
+}
+
+.donut-grafic__donut .donut-chart {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+
+.donut-grafic__donut .donut-chart .center {
+  background: #fff;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  height: 112px;
+  width: 112px;
+  border-radius: 70px;
+}
+
+.donut-grafic__donut .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #BC9CFF;
+}
+
+.donut-grafic__donut .center__votes-count {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.donut-grafic__donut .center__votes {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.donut-grafic__donut .clip {
+  border-radius: 50%;
+  clip: rect(0px, 120px, 120px, 61px);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.donut-grafic__donut .item {
+  border-radius: 50%;
+  clip: rect(0px, 59px, 120px, 0px);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+
+.donut-grafic__donut #section1 {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.donut-grafic__donut #section1 .item {
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.donut-grafic__donut #section2 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.donut-grafic__donut #section2 .item {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.donut-grafic__donut #section4 {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.donut-grafic__donut #section4 .item {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFE39C), to(#FFBA9C));
+  background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.donut-grafic__group {
+  margin-left: 1.9em;
+  padding-top: 1.8em;
+}
+
+.donut-grafic__group__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.3em;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.donut-grafic__group__section__item1, .donut-grafic__group__section__item2, .donut-grafic__group__section__item3, .donut-grafic__group__section__item4 {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.donut-grafic__group__section__item1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFE39C), to(#FFBA9C));
+  background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+}
+
+.donut-grafic__group__section__item2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.donut-grafic__group__section__item3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.donut-grafic__group__section__item4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#919191), to(#3D4975));
+  background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+}
+/*# sourceMappingURL=Donut-chart.css.map */

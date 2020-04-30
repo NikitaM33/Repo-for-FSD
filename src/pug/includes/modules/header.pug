@@ -13,8 +13,9 @@ header.header
                 +headerNav("#Vacancy", "Вакансии")
                 +headerNav("#News", "Новости")
                 +headerNav("#Agreement", "Соглашения")
-                +headerNav("./signin.html", "Войти")
-                +headerNav("./signup.html", "Зарегестрироваться")
+                .header__loginbtn
+                    +headerNav("./signin.html", "Войти")
+                    +headerNav("./signup.html", "Зарегестрироваться")
 
         .header__burger
             .header__burger__wrapper.lines

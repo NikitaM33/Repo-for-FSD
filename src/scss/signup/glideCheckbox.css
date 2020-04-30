@@ -1,0 +1,43 @@
+.glide-checkbox__glidecb {
+  display: none;
+}
+
+.glide-checkbox__glidel {
+  position: relative;
+  display: block;
+  padding-left: 3.6em;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.glide-checkbox__glidel:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 38px;
+  height: 18px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  background: #fff;
+}
+
+.glide-checkbox__glidel:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(31, 32, 65, 0.25);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#glide:checked + .glide-checkbox__glidel:after {
+  left: 22px;
+}
+/*# sourceMappingURL=glideCheckbox.css.map */

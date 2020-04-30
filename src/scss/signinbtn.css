@@ -1,26 +1,33 @@
 .signin-btn {
   position: relative;
+  width: 100%;
+  height: 100%;
   border-radius: 22px;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  z-index: 1;
 }
 
-.signin-btn input {
+.signin-btn a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 87px;
-  height: 34px;
-  padding: 3px 1.5em;
+  width: 100%;
+  height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Montserrat;
+  font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
+  text-decoration: none;
   color: #BC9CFF;
   background: #fff;
   background-clip: padding-box;

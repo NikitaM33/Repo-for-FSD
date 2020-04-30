@@ -1,0 +1,33 @@
+.room-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #000;
+  border-color: rgba(31, 32, 65, 0.1);
+  padding-bottom: 0.8em;
+}
+
+.room-item__icon {
+  margin-right: 1em;
+  padding-top: 7px;
+}
+
+.room-item__text {
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.room-item__text label {
+  font-weight: bold;
+}
+
+.room-item__text p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+/*# sourceMappingURL=Room-info.css.map */

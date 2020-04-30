@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACN,OAAO,EAAE,YAAY;EACrB,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,iDAAiD;EAC7D,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,MAAM;EAClB,UAAU,EAAE,IAAI;CASnB;;AAhBD,AASI,SATK,CASL,GAAG,CAAC;EACA,cAAc,EAAE,GAAG;CACtB;;AAXL,AAaI,SAbK,AAaJ,MAAM,CAAC;EACJ,OAAO,EAAE,GAAG;CACf",
+    "sources": [
+        "Next-btn.scss"
+    ],
+    "names": [],
+    "file": "Next-btn.css"
+}

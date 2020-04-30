@@ -38,4 +38,25 @@
 .postFooter .social-icons a:hover img {
   opacity: 0.5;
 }
+
+@media (max-width: 710px) {
+  .postFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .postFooter .copyright {
+    max-width: 90%;
+    margin: 1em auto;
+  }
+  .postFooter .social-icons {
+    max-width: 8em;
+    margin: 0 auto;
+  }
+}
 /*# sourceMappingURL=postFooter.css.map */

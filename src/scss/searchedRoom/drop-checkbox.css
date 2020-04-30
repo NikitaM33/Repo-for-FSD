@@ -1,0 +1,40 @@
+.drop-checkbox__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.drop-checkbox__label .label {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.drop-checkbox__label .updown-arrow {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 10%;
+          flex: 0 1 10%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.drop-checkbox .checkbox-group {
+  display: none;
+  margin-top: 1em;
+}
+
+.drop-checkbox .checkbox-group label {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=drop-checkbox.css.map */

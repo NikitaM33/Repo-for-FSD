@@ -1,0 +1,39 @@
+.filterFormContainer {
+  margin-top: 1.7em;
+  padding: 0;
+}
+
+.filterFormContainer label {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.filterFormContainer .filterInput__dateInput {
+  margin-top: 4px;
+  margin-bottom: 1.1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+.filterFormContainer .filterInput__dateInput input {
+  width: 91%;
+  padding: 8px 0 8px 8px;
+}
+
+.filterFormContainer .filterInput__dateInput input {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  border: none;
+  outline: none;
+}
+
+.filterFormContainer .filterInput__dropMenu {
+  margin-top: 3px;
+}
+/*# sourceMappingURL=filterForm.css.map */

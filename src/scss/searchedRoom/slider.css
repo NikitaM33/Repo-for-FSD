@@ -1,0 +1,98 @@
+.price-range__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price-range__price__label label {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.price-range__price__sum span {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.price-range .slider {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  margin-top: 1.36em;
+  margin-bottom: 0.9em;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.price-range .slider .bar {
+  position: absolute;
+  left: 50px;
+  width: 150px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  height: 100%;
+}
+
+.price-range .slider .bar .lp span {
+  position: relative;
+  left: -30px;
+}
+
+.price-range .slider .bar .rp span {
+  position: relative;
+  left: 10px;
+}
+
+.price-range .slider .bar .lp, .price-range .slider .bar .rp {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6FCF97), to(#66D2EA));
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  width: 12px;
+  height: 12px;
+  border: 2px solid #FFFFFF;
+  border-radius: 100%;
+  position: absolute;
+  line-height: 400%;
+  color: #555;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.price-range .slider .bar .lp {
+  left: 0px;
+  top: -6px;
+}
+
+.price-range .slider .bar .rp {
+  left: 96%;
+  top: -6px;
+}
+
+.price-range p {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+@media (max-width: 992px) {
+  .price-range .slider .bar {
+    width: 80px;
+  }
+}
+/*# sourceMappingURL=slider.css.map */

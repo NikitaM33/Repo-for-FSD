@@ -1,112 +1,269 @@
 .main-form {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-      grid-template-areas: "formHeader formHeader" "searchForm searchForm" "searchFormBtn searchFormBtn";
-  position: absolute;
-  max-width: 20em;
-  margin: 4.4em 8.8em;
-  padding: 1.2em 1.8em 0 1.8em;
-  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1.3em 1.84em 1.9em 1.85em;
+  background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 }
 
-.main-form .main-form__header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: formHeader;
-  margin-bottom: 1.2em;
-}
-
-.main-form .search-form {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: searchForm;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-      grid-template-areas: "inputDateIn inputDateIn" "guests guests" "searchBtn searchBtn";
-}
-
-.main-form .search-form .search-form__arrival-departure {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: inputDateIn;
+.main-form__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: -20px;
-  margin-bottom: 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
-.main-form .search-form .search-form__arrival-departure label {
+.main-form__header h2 {
+  margin-top: 21px;
+  margin-right: 2px;
+}
+
+.main-form__header span {
+  margin-top: 8px;
+}
+
+.main-form__header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-form__header__item {
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.main-form__header__lux {
   font-weight: bold;
   font-size: 12px;
+  line-height: 15px;
+  color: #BC9CFF;
   text-transform: uppercase;
 }
 
-.main-form .search-form .search-form__arrival-departure input {
-  width: 11em;
-  height: 3em;
-  padding: 0px 8px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 5px;
+.main-form__header__pricePerDay {
+  margin-top: 7px;
 }
 
-.main-form .search-form .search-form__arrival-departure .arrival-input {
-  margin-right: 1.5em;
+.main-form__header__pricePerDay__item {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
-.main-form .search-form .search-form__guests-input {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: guests;
-  margin-top: 1em;
+.main-form__header__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
 }
 
-.main-form .search-form .search-form__guests-input label {
+@media (max-width: 992px) {
+  .main-form__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1em;
+  }
+  .main-form__header h2 {
+    margin: 0px 4px 0px 0;
+  }
+}
+
+.main-form .search-form {
+  width: 100%;
+  margin: -2px 0 2px 0;
+}
+
+.main-form .search-form__arrival-departure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.1em;
+}
+
+.main-form .search-form__arrival-departure .items__wrapper {
+  margin-right: 6.4%;
+}
+
+.main-form .search-form__arrival-departure .items__wrapper:last-child {
+  margin-right: 0;
+}
+
+.main-form .search-form__arrival-departure .items__wrapper label {
   font-weight: bold;
   font-size: 12px;
+  line-height: 15px;
   text-transform: uppercase;
 }
 
-.main-form .search-form .search-form__guests-input input {
-  width: 24em;
-  height: 3em;
-  margin-right: 3em;
-  margin-top: 0.2em;
+.main-form .search-form__arrival-departure .items__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 5px;
-  padding: 1em;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.main-form .search-form__arrival-departure .items__input__arrival-input input, .main-form .search-form__arrival-departure .items__input__departure-input input {
+  max-width: 76%;
+  padding: 7px 0px 15px 9px;
+  border: none;
+  outline: none;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.main-form .search-form__arrival-departure .items__input .arrival-input__arrow,
+.main-form .search-form__arrival-departure .items__input .departure-input__arrow {
+  display: inline;
+  margin-left: auto;
+  text-align: center;
+}
+
+.main-form .search-form__arrival-departure .items__input .arrival-input__arrow img,
+.main-form .search-form__arrival-departure .items__input .departure-input__arrow img {
+  text-align: center;
+  vertical-align: sub;
+}
+
+.main-form .search-form__guests-input label {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.main-form .search-form__guests-input .drop-menu {
+  margin-top: 4px;
 }
 
 .main-form .search-form__button {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: searchFormBtn;
-  padding: 2.3em 0 2em 0;
+  margin-top: 1.96em;
+  width: 100%;
 }
 
-.main-form .search-form__button .search-form__button_size {
-  max-width: 100%;
-  height: 2.5em;
+.main-form .price-info {
+  position: relative;
+  width: 100%;
+  padding-left: 2px;
+  margin-top: 1.2em;
+  margin-bottom: 0.8em;
+  font-size: 14px;
+  line-height: 23px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.main-form .price-info__price-counter, .main-form .price-info__service, .main-form .price-info__added-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.8em;
+}
+
+.main-form .price-info__text-wrapper {
+  position: relative;
+  max-width: 15.7em;
+}
+
+.main-form .price-info__discount-info-mark, .main-form .price-info__service-info-mark {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 15.6em;
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-form .price-info__discount-info-mark:hover, .main-form .price-info__service-info-mark:hover {
+  color: #BC9CFF;
+  border: 1px solid #BC9CFF;
+}
+
+.main-form .price-info__discount-info-mark {
+  top: 0;
+}
+
+.main-form .price-info__service-info-mark {
+  bottom: 1.75em;
+  padding-top: 2px;
+}
+
+@media (max-width: 1050px) {
+  .main-form .price-info__discount-info-mark, .main-form .price-info__service-info-mark {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-form .price-info__text-wrapper {
+    max-width: 11.7em;
+  }
+}
+
+.main-form .total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.main-form .total-price__dots {
+  width: 100%;
+  height: 0.9em;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
 }
 /*# sourceMappingURL=mainForm.css.map */
