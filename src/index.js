@@ -2,8 +2,6 @@ import './scss/main.scss';
 
 console.log("Hello world");
 
-
-
 $(document).ready(function() {
   // ============== Burger menu
   $('.header__burger').click(function() {
