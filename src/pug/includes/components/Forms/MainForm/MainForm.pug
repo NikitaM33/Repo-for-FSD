@@ -2,7 +2,8 @@ include ../../../../utils/Buttons/Buttons
 include ../../Drop-menu/Drop-menu
 
 block variables
-    - var arrow = '../src/image/arrowforward.png';
+    //- - var arrow = '../src/image/arrowforward.png';
+    - var arrow = './src/image/arrowforward.png';
     - var firstLabelName = 'Взрослые'
     - var secondLabelName = 'Дети'
     - var thirdLabelName = 'Младенцы'
@@ -36,14 +37,16 @@ mixin mainForm(headerName, numberHeader, lux, price, inputType, countFacilities,
                         .items__input__arrival-input
                             input(type="date")
                             .arrival-input__arrow
-                                img(src="../src/image/expand_more.png")
+                                //- img(src="../src/image/expand_more.png")
+                                img(src="./src/image/expand_more.png")
                 .items__wrapper
                     label Выезд
                     .items__input
                         .items__input__departure-input
                             input(type="date")
                             .departure-input__arrow
-                                img(src="../src/image/expand_more.png")
+                                //- img(src="../src/image/expand_more.png")
+                                img(src="./src/image/expand_more.png")
             .search-form__guests-input
                 label Гости
                 +dropMenu(inputType, countFacilities, firstLabelName, secondLabelName, thirdLabelName, bottomBtn)
